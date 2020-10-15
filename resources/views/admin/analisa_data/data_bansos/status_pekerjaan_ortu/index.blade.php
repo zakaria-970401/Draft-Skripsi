@@ -11,57 +11,51 @@
         </li>
         <li>
             <i class="ace-icon fa fa-bar-chart home-icon"></i>
-            <a href="#">Data Penerimaan Bansos</a>
+            <a href="#">Data Status Pekerjaan Orang Tua/    Wali</a>
         </li>
     </ul><!-- /.breadcrumb -->
 </div>
-    
-<form action="/admin/cari_penerimaan_tahun" method="POST">
+
+<form action="/admin/cari_pekerjaanortu_tahun" method="POST">
     @csrf
-    <div class="page-content">
-        <div class="row">
-            <div class="col-md-7">
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Cari Berdasarkan Tahun : </label>
-            <div class="col-sm-9">
-                <select class="form-control" name="tahun" style="width: 100%;">
-                <option>Silahkan Pilih</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-            </select>
-        </div>
-      </div>
+   <div class="page-content">
+        <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right"> Cari Berdasarkan Tahun : </label>
+        <div class="col-sm-4">
+            <select class="form-control" name="tahun" style="width: 100%;">
+            <option>Silahkan Pilih</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
     </div>
     <button type="submit" class="btn btn-secondary btn-sm"><i class="fa fa-search"> Cari</i></button>
     <button type="button" id="btn_show_tahun" class="btn btn-info btn-sm"><i class="fa fa-eye"> Tampilan Grafik Tahunan</i></button>
     <button type="button" id="btn_hide_tahun" class="btn btn-danger btn-sm"><i class="fa fa-close"> Sembunyikan Grafik Tahunan</i></button>
-        </form>
-        <br>
-        <br>
+    </div>
+    </form>
+        <div class="row">
         <div class="col-xs-12">
-            <div id="container">
-            </div>
+            <br>
+            <div id="container"></div>
         </div>
         <div class="col-xs-12">
-            <hr style="background-color: black">
             <br>
-                <div id="grafik-tahunan">
+            <div id="grafik-tahunan"></div>
             </div>
         </div>
     </div>
 <script type="text/javascript">
+
 Highcharts.chart('container', {
     chart: {
         type: 'column'
     },
     title: {
-        text: 'Grafik Penerimaan Bansos Siswa Tahun {{$request_tahun}}'
-    },
-    subtitle: {
+        text: 'Grafik Status Pekerjaan Orang Tua/Wali Siswa'
     },
     xAxis: {
         categories: [
@@ -83,39 +77,49 @@ Highcharts.chart('container', {
             'XI-TKR-C',
             'XII-TKR-A',
             'XII-TKR-B',
-            'XII-TKR-C'
+            'XII-TKR-C',
         ],
         crosshair: true
     },
     yAxis: {
+        min: 0,
         title: {
-            text: 'Grafik Data Bansos Siswa Dapat Dan Tidak Dapat'
+            text: 'Grafik Status Pekerjaan Orang Tua/Wali Siswa'
         }
     },
     tooltip: {
         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.f}</b></td></tr>',
+            '<td style="padding:0"><b>{point.y:1}</b></td></tr>',
         footerFormat: '</table>',
         shared: true,
         useHTML: true
     },
     plotOptions: {
         column: {
-            pointPadding: 0.2,
-            borderWidth: 0
+            pointPadding: 0.1,
+            borderWidth: 1
         }
     },
     series: [{
-        name: 'DAPAT',
-        data: [{{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}   ]
+        name: 'Karyawan Swasta',
+        data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
     }, {
-        name: 'TIDAK DAPAT',
-        data: [{{$x_tkja_tdkdpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}  ]
+        name: 'Pegawai Negeri',
+        data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+    }, {
+        name: 'Pekerja Tidak Tetap',
+        data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+    }, {
+        name: 'Usaha',
+        data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
     }]
 });
+          
 
 
 Highcharts.chart('grafik-tahunan', {
@@ -138,7 +142,7 @@ Highcharts.chart('grafik-tahunan', {
         },
         labels: {
             formatter: function () {
-                return this.value / 100;
+                return this.value / 1000;
             }
         }
     },
@@ -158,11 +162,17 @@ Highcharts.chart('grafik-tahunan', {
         }
     },
     series: [{
-        name: 'Dapat',
-        data: [{{$x_tkja_dpt_2020}}, {{$x_tkja_dpt_2021}}, 21, 22, 50, 50]
+        name: 'Karyawan Swasta',
+        data: [{{$karyawanswasta_xtkja_2020}}, {{$karyawanswasta_xtkja_2021}}, 21, 22, 50, 50]
     }, {
-        name: 'Tidak Dapat',
-        data: [{{$x_tkja_tdkdpt_2020}}, {{$x_tkja_tdkdpt_2021}}, 70, 20, 10, 50]
+        name: 'Pegawai Negeri',
+        data: [23, 54, 21, 22, 50, 50]
+    },{
+        name: 'Pekerja TIdak Tetap',
+        data: [13, 17, 21, 22, 50, 50]
+    },{
+        name: 'Usaha',
+        data: [13, 17, 21, 22, 50, 50]
     }]
 });
 

@@ -11,45 +11,39 @@
         </li>
         <li>
             <i class="ace-icon fa fa-bar-chart home-icon"></i>
-            <a href="#">Data Penerimaan Bansos</a>
+            <a href="/">Data Kelengkapan Orang Tua Siswa</a>
         </li>
     </ul><!-- /.breadcrumb -->
 </div>
-    
-<form action="/admin/cari_penerimaan_tahun" method="POST">
+<form action="/admin/cari_statusortu_tahun" method="POST">
     @csrf
-    <div class="page-content">
-        <div class="row">
-            <div class="col-md-7">
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Cari Berdasarkan Tahun : </label>
-            <div class="col-sm-9">
-                <select class="form-control" name="tahun" style="width: 100%;">
-                <option>Silahkan Pilih</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-            </select>
-        </div>
-      </div>
+   <div class="page-content">
+        <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right"> Cari Berdasarkan Tahun : </label>
+        <div class="col-sm-4">
+            <select class="form-control" name="tahun" style="width: 100%;">
+            <option>Silahkan Pilih</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
     </div>
     <button type="submit" class="btn btn-secondary btn-sm"><i class="fa fa-search"> Cari</i></button>
     <button type="button" id="btn_show_tahun" class="btn btn-info btn-sm"><i class="fa fa-eye"> Tampilan Grafik Tahunan</i></button>
     <button type="button" id="btn_hide_tahun" class="btn btn-danger btn-sm"><i class="fa fa-close"> Sembunyikan Grafik Tahunan</i></button>
-        </form>
-        <br>
-        <br>
+    </div>
+    </form>
+        <div class="row">
         <div class="col-xs-12">
-            <div id="container">
-            </div>
+            <br>
+            <div id="container"></div>
         </div>
         <div class="col-xs-12">
-            <hr style="background-color: black">
             <br>
-                <div id="grafik-tahunan">
+            <div id="grafik-tahunan"></div>
             </div>
         </div>
     </div>
@@ -59,7 +53,7 @@ Highcharts.chart('container', {
         type: 'column'
     },
     title: {
-        text: 'Grafik Penerimaan Bansos Siswa Tahun {{$request_tahun}}'
+        text: 'Grafik Status Kelengkapan Orang Tua Siswa'
     },
     subtitle: {
     },
@@ -89,7 +83,7 @@ Highcharts.chart('container', {
     },
     yAxis: {
         title: {
-            text: 'Grafik Data Bansos Siswa Dapat Dan Tidak Dapat'
+            text: 'Grafik Status Kelengkapan Orang Tua Siswa'
         }
     },
     tooltip: {
@@ -107,12 +101,12 @@ Highcharts.chart('container', {
         }
     },
     series: [{
-        name: 'DAPAT',
-        data: [{{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}   ]
+        name: 'ORTU LENGKAP',
+        data: [21,67  ]
 
     }, {
-        name: 'TIDAK DAPAT',
-        data: [{{$x_tkja_tdkdpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}  ]
+        name: 'ORTU TIDAK LENGKAP',
+        data: [78,18  ]
 
     }]
 });
@@ -123,7 +117,7 @@ Highcharts.chart('grafik-tahunan', {
         type: 'area'
     },
     title: {
-        text: 'Grafik Penerimaan Tahunan Bansos'
+        text: 'Grafik Tahunan Status Kelengkapan Ortu Siswa'
     },
     xAxis: {
         categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
@@ -134,11 +128,11 @@ Highcharts.chart('grafik-tahunan', {
     },
     yAxis: {
         title: {
-            text: 'Grafik Penerimaan Tahunan Bansos'
+            text: 'Grafik Tahunan Status Kelengkapan Ortu Siswa'
         },
         labels: {
             formatter: function () {
-                return this.value / 100;
+                return this.value / 1000;
             }
         }
     },
@@ -159,10 +153,10 @@ Highcharts.chart('grafik-tahunan', {
     },
     series: [{
         name: 'Dapat',
-        data: [{{$x_tkja_dpt_2020}}, {{$x_tkja_dpt_2021}}, 21, 22, 50, 50]
+        data: [21, 24, 21, 22, 50, 50]
     }, {
         name: 'Tidak Dapat',
-        data: [{{$x_tkja_tdkdpt_2020}}, {{$x_tkja_tdkdpt_2021}}, 70, 20, 10, 50]
+        data: [22, 64,  21, 22, 50, 50]
     }]
 });
 

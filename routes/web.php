@@ -110,8 +110,12 @@ Route::GET('/admin/hapus_datawalas/{id}', 'AdminController@hapus_datawalas');
 
 
 // MODULE ANALISA DATA //
-Route::get('/admin/analisa_databansos', 'NaiveBaiyesController@analisa_databansos');
-Route::post('/admin/cari_penerimaan_tahun', 'NaiveBaiyesController@post_analisa_databansos');
+Route::get('/admin/analisa_databansos', 'GrafikController@analisa_databansos');
+Route::post('/admin/cari_penerimaan_tahun', 'GrafikController@post_analisa_databansos');
+Route::get('/admin/status_kelengkapan_ortu', 'GrafikController@status_kelengkapan_ortu');
+Route::post('/admin/cari_statusortu_tahun', 'GrafikController@post_status_kelengkapan_ortu');
+Route::get('/admin/status_pekerjaan_ortu', 'GrafikController@status_pekerjaan_ortu');
+Route::post('/admin/cari_pekerjaanortu_tahun', 'GrafikController@post_status_pekerjaan_ortu');
 
 //MODULE NAIK KELAS //
 Route::get('/admin/naik_kelas', 'AdminController@naik_kelas');

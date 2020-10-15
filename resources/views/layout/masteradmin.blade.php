@@ -244,14 +244,14 @@
 							<b class="arrow fa fa-caret-right"></b>
 						  </li>
 						<li class="">
-							<a href="#">
+							<a href="/admin/status_kelengkapan_ortu">
 								<i class="menu-icon fa fa-caret-right"></i>
 								Rekap Kelengkapan Ortu
 							</a>
 							<b class="arrow fa fa-caret-right"></b>
 						  </li>
 						<li class="">
-							<a href="#">
+							<a href="/admin/status_pekerjaan_ortu">
 								<i class="menu-icon fa fa-caret-right"></i>
 								Rekap Pekerjaan Ortu
 							</a>
@@ -405,8 +405,14 @@
 		$(document).ready(function() {
 
 			//Plugin Table
+			
 			$('#myTable').DataTable();
 
+	
+			$('#grafik-tahunan').hide()
+
+			$('#btn_hide_tahun').hide()
+			
 			$('#upload_file').hide();
 
 			$('#download_excel').hide();
@@ -431,6 +437,8 @@
 			$('#dataset').hide()
 
 			$('#manual').hide()
+		
+
 
 
 
@@ -439,6 +447,18 @@
 				$("#input-username").prop("disabled", false);
 				$("#input-password").prop("disabled", false);
 				$("#input-confirm-password").show();
+			});
+		
+			$('#btn_show_tahun').click(function(){
+				$("#grafik-tahunan").show();
+				$("#btn_hide_tahun").show();
+				$("#btn_show_tahun").hide();
+			});
+			
+			$('#btn_hide_tahun').click(function(){
+				$("#grafik-tahunan").hide();
+				$("#btn_show_tahun").show();
+				$("#btn_hide_tahun").hide();
 			});
 
 			$('#file_excel').on('change', function(){

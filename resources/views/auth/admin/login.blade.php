@@ -21,7 +21,7 @@
             <div>
                 <br>
                 <br>
-                <input type="text" placeholder="Masukan Email" required id="username" name="email" />
+                <input type="text" placeholder="Masukan Email" required id="username" name="email" autofocus="on" />
                 <input type="password" placeholder="Masukan Password" required="" id="password" name="password" />
             </div>
                 <input type="submit" value="Login" />

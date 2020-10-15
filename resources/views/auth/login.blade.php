@@ -8,7 +8,7 @@
 		<div class="login">
             <form action="{{route('login')}}" id="login" method="POST">
                 @csrf
-				<input type="text" placeholder="username" name="email"><br>
+				<input type="text" placeholder="username" name="email" autofocus="on"><br>
 				<input type="password" placeholder="password" name="password"><br>
 				<input type="button" value="Login" onclick="login()">
 				<input type="button" value="Kembali" onclick="location.href='/';">

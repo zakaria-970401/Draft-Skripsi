@@ -11,12 +11,12 @@
         </li>
         <li>
             <i class="ace-icon fa fa-bar-chart home-icon"></i>
-            <a href="#">Data Penerimaan Bansos</a>
+            <a href="/">Data Status Kelengkapan Orang Tua Siswa</a>
         </li>
     </ul><!-- /.breadcrumb -->
 </div>
     
-<form action="/admin/cari_penerimaan_tahun" method="POST">
+<form action="/admin/cari_statusortu_tahun" method="POST">
     @csrf
     <div class="page-content">
         <div class="row">
@@ -36,13 +36,13 @@
         </div>
       </div>
     </div>
-    <button type="submit" class="btn btn-secondary btn-sm"><i class="fa fa-search"> Cari</i></button>
-    <button type="button" id="btn_show_tahun" class="btn btn-info btn-sm"><i class="fa fa-eye"> Tampilan Grafik Tahunan</i></button>
-    <button type="button" id="btn_hide_tahun" class="btn btn-danger btn-sm"><i class="fa fa-close"> Sembunyikan Grafik Tahunan</i></button>
+            <button type="submit" class="btn btn-secondary btn-sm"><i class="fa fa-search"> Cari</i></button>
+            <button type="button" id="btn_show_tahun" class="btn btn-info btn-sm"><i class="fa fa-eye"> Tampilan Grafik Tahunan</i></button>
+            <button type="button" id="btn_hide_tahun" class="btn btn-danger btn-sm"><i class="fa fa-close"> Sembunyikan Grafik Tahunan</i></button>
         </form>
-        <br>
-        <br>
         <div class="col-xs-12">
+            <br>
+            <br>
             <div id="container">
             </div>
         </div>
@@ -107,12 +107,12 @@ Highcharts.chart('container', {
         }
     },
     series: [{
-        name: 'DAPAT',
-        data: [{{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}   ]
+        name: 'ORANG TUA SISWA LENGKAP',
+        data: [{{$x_tkja_lengkap}}, 22  ]
 
     }, {
-        name: 'TIDAK DAPAT',
-        data: [{{$x_tkja_tdkdpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}  ]
+        name: 'ORANG TUA SISWA TIDAK LENGKAP',
+        data: [{{$x_tkja_tdklengkap}},22  ]
 
     }]
 });
@@ -158,11 +158,11 @@ Highcharts.chart('grafik-tahunan', {
         }
     },
     series: [{
-        name: 'Dapat',
-        data: [{{$x_tkja_dpt_2020}}, {{$x_tkja_dpt_2021}}, 21, 22, 50, 50]
+        name: 'ORANG TUA SISWA LENGKAP',
+        data: [{{$x_tkja_lengkap_2020}}, {{$x_tkja_lengkap_2021}}, 21, 22, 50, 50]
     }, {
-        name: 'Tidak Dapat',
-        data: [{{$x_tkja_tdkdpt_2020}}, {{$x_tkja_tdkdpt_2021}}, 70, 20, 10, 50]
+        name: 'ORANG TUA SISWA TIDAK LENGKAP',
+        data: [{{$x_tkja_tdklengkap_2020}}, {{$x_tkja_tdklengkap_2021}}, 70, 20, 10, 50]
     }]
 });
 

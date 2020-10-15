@@ -868,35 +868,4 @@ class NaiveBaiyesController extends Controller
 
         return redirect('/admin/dataset_siswa');
     }
-
-    public function analisa_databansos()
-    {
-        $data = DataSetModel::all();
-
-        $x_tkja_dpt = HasilHitunganModel::where('kelas', 'X-TKJ-A')->where('probabilitas_dapat', '>', 0)->count();
-
-        $x_tkja_tdkdpt = HasilHitunganModel::where('kelas', 'X-TKJ-A')->where('probabilitas_tdkdapat', '>', 0)->count();
-
-
-        return view('admin.analisa_data.data_bansos.status_penerimaan_bansos.index', compact('data', 'x_tkja_dpt', 'x_tkja_tdkdpt'));
-    }
-
-    public function post_analisa_databansos(Request $request)
-    {
-        $data = DataSetModel::all();
-        $request_tahun = $request->tahun;
-
-
-        $sorting_tahun = HasilHitunganModel::whereYear('tgl_daftar', $request_tahun)->get();
-
-
-        $x_tkja_dpt = HasilHitunganModel::where('kelas', 'X-TKJ-A')->where('probabilitas_dapat', '>', 0)->whereYear('tgl_daftar', $request_tahun)->count();
-
-        dump($x_tkja_dpt);
-
-        $x_tkja_tdkdpt = HasilHitunganModel::where('kelas', 'X-TKJ-A')->where('probabilitas_tdkdapat', '>', 0)->whereYear('tgl_daftar', $request_tahun)->count();
-
-
-        return view('admin.analisa_data.data_bansos.status_penerimaan_bansos.result', compact('data', 'x_tkja_dpt', 'x_tkja_tdkdpt'));
-    }
 }
