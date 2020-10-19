@@ -24,9 +24,15 @@
             <div id="home" class="tab-pane in active">
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 center">
+                        @if(Auth::user()->foto == Null)
                         <span class="profile-picture">
-                            <img class="editable img-responsive" alt="Silahkan Tambahkan Foto" id="avatar2" src="{{asset('foto_akunsiswa/'.Auth::User()->foto)}}" />
+                            <img class="editable img-responsive" alt="Silahkan Tambahkan Foto" id="avatar2" src="{{asset('fotosiswa/'.$join_foto->foto)}}" />
                         </span>
+                        @else
+                        <span class="profile-picture">
+                            <img class="editable img-responsive" alt="Silahkan Tambahkan Foto" id="avatar2" src="{{asset('foto_akunsiswa/'.Auth::user()->foto)}}" />
+                        </span>
+                        @endif
                         <div class="space space-4"></div>
                         <h3 class="text-dark"><b>{{Auth::user()->nama_siswa}}</b></h3>
                     </div><!-- /.col -->                 

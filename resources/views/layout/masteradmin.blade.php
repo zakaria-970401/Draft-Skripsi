@@ -72,16 +72,13 @@
 
 			<div class="navbar-header pull-left">
 				<a href="/" class="navbar-brand">
-					<small>
-						<i class="fa fa-television"></i>
-						Bansos Apps
-					</small>
+					<img src="/assets/images/avatars/logo.png" style="width: 150px" alt="">
 				</a>
 			</div>
 
 			<div class="navbar-buttons navbar-header pull-right" role="navigation">
 				<ul class="nav ace-nav">
-					<li class="light-blue dropdown-modal">
+					<li class="dropdown-modal">
 						<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 							<img class="nav-user-photo" src=" {{ asset('foto_akunadmin/'.Auth::user()->foto)}}" style="width: 78px" alt="" alt="{{Auth::user()->nama}} Foto" />
 							<span class="user-info">
@@ -258,30 +255,16 @@
 							<b class="arrow fa fa-caret-right"></b>
 						  </li>
 						<li class="">
-							<a href="#">
+							<a href="/admin/status_rumah_ortu">
 								<i class="menu-icon fa fa-caret-right"></i>
 								Rekap Status Rumah Ortu
 							</a>
 							<b class="arrow fa fa-caret-right"></b>
 						  </li>
-						<li class="">
-							<a href="#">
-								<i class="menu-icon fa fa-caret-right"></i>
-								Rekap Status SK Tidak Mampu
-							</a>
-							<b class="arrow fa fa-caret-right"></b>
-						  </li>
 						</ul>
 					</li>
-						<li class="">
-							<a href="#">
-								<i class="menu-icon fa fa-caret-right"></i>
-								Data Training
-							</a>
-							<b class="arrow"></b>
-						  </li>
-						</li>
-					</ul>
+				</li>
+			  </ul>
 				<li class="">
 					<a href="#" class="dropdown-toggle">
 						<i class="menu-icon fa fa-university"></i>

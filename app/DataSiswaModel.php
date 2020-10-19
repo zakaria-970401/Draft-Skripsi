@@ -24,7 +24,6 @@ class DataSiswaModel extends Model
         'no_hp',
         'nama_ayah',
         'nama_ibu',
-        'pekerjaan_wali',
         'foto',
     ];
 }

@@ -159,19 +159,19 @@
                                 <span class="editable" id="username">{{$siswa->nama_ibu}}</span>
                             </div>
                         </div>
-                        <div class="profile-info-row">
-                            <div class="profile-info-name"> Pekerjaan Wali </div>
-                            <div class="profile-info-value">
-                                <span class="editable" id="username">{{$siswa->pekerjaan_wali}}</span>
-                            </div>
-                        </div>
                         </div>
                         <h3 class="header smaller lighter blue">Informasi Akun Siswa</h3>
                         <div class="profile-user-info profile-user-info-striped">
                             <div class="profile-info-row">
                                 <div class="profile-info-name"> E-mail </div>
                                 <div class="profile-info-value">
-                                    <span class="editable" id="username">{{$join_akun->email}}</span>
+                                    <span class="editable" id="username">
+                                        @if($join_akun->email == NULL)
+                                        <b> <h3>Belum Ada Akun</h3></b>
+                                        @else
+                                        {{$join_akun->email}}
+                                        @endif
+                                    </span>
                                 </div>
                             </div>
                             <div class="profile-info-row">
@@ -183,7 +183,11 @@
                             <div class="profile-info-row">
                                 <div class="profile-info-name"> Foto Profile </div>
                                 <div class="profile-info-value">
+                                    @if($join_akun->email == NULL)
+                                    <b> <h3>Belum Ada Foto Akun</h3></b> 
+                                    @else
                                     <img src="{{asset('foto_akunsiswa/'.$join_akun->foto)}}" style="width: 200px">
+                                    @endif
                                 </div>
                             </div>                          
                         </div><!-- /.user-profile -->
@@ -297,12 +301,6 @@
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Nama Ibu : </label>
                                     <div class="col-sm-9">
                                     <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nama_ibu" required value="{{$siswa->nama_ibu}}"/>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Pekerjaan Wali : </label>
-                                    <div class="col-sm-9">
-                                        <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="pekerjaan_wali" required value="{{$siswa->pekerjaan_wali}}" />
                                     </div>
                                 </div>
                                 <div class="form-group">

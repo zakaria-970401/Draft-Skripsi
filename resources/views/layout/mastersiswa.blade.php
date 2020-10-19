@@ -74,9 +74,9 @@
 
 				<div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
-						<li class="light-blue dropdown-modal">
+						<li class="dropdown-modal">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="{{asset ('foto_akunsiswa/'.Auth::user()->foto)}}" alt="Belum Ada Foto" />
+								<img class="nav-user-photo" src="{{asset ('foto_akunsiswa/'.Auth::user()->foto)}}" alt="" style=" width: 20px; height: 40px;"/>
 								<span class="user-info">
 									<small>Welcome,</small>
 									{{Auth::user()->nama_siswa}}

@@ -48,41 +48,41 @@
                             @foreach ($result as $data)
                             <td class="text-center">{{$loop->iteration}}</td>
                             
-                            <input type="hidden" name="tanggal_daftar" value="{{$data->tgl_daftar}}">
-                            <input type="hidden" name="nisn" value="{{$data->nisn}}">
-
+                            <input type="hidden" name="tanggal_daftar[]" value="{{$data->tgl_daftar}}">
+                            <input type="hidden" name="nisn[]" value="{{$data->nisn}}">
+                          
                             <td class="text-center">
-                            <input type="hidden" name="nama_siswa" value="{{$data->nama_siswa}}">
+                            <input type="hidden" name="nama_siswa[]" value="{{$data->nama_siswa}}">
                               {{$data->nama_siswa}}
                             </td>
                             <td class="text-center">
-                                <input type="hidden" name="kelas" value="{{$data->kelas}}">
+                                <input type="hidden" name="kelas[]" value="{{$data->kelas}}">
                                 {{$data->kelas}}
                             </td>
                             <td class="text-center">
-                                <input type="hidden" name="status_kelengkapan_ortu" value="{{$data->status_kelengkapan_ortu}}">
+                                <input type="hidden" name="status_kelengkapan_ortu[]" value="{{$data->status_kelengkapan_ortu}}">
                                 {{$data->status_kelengkapan_ortu}}
                             </td>
                             <td class="text-center">
-                                <input type="hidden" name="status_rumah_ortu" value="{{$data->status_rumah_ortu}}">
+                                <input type="hidden" name="status_rumah_ortu[]" value="{{$data->status_rumah_ortu}}">
                                 {{$data->status_rumah_ortu}}
                             </td>
                             <td class="text-center">
-                                <input type="hidden" name="status_pekerjaan_wali" value="{{$data->status_pekerjaan_wali}}">
+                                <input type="hidden" name="status_pekerjaan_wali[]" value="{{$data->status_pekerjaan_wali}}">
                                 {{$data->status_pekerjaan_wali}}
                             </td>
                             <td class="text-center">
-                                <input type="hidden" name="status_sk_tidakmampu" value="{{$data->status_sk_tidakmampu}}">
+                                <input type="hidden" name="status_sk_tidakmampu[]" value="{{$data->status_sk_tidakmampu}}">
                                 {{$data->status_sk_tidakmampu}}
                             </td>
                             <td class="text-center">{{$data->probabilitas_dapat}}</td>
                             <td class="text-center">{{$data->probabilitas_tdkdapat}}</td>
                             <td class="text-center">
                                 @if($data->probabilitas_tdkdapat < $data->probabilitas_dapat)
-                                <input type="hidden" name="keterangan" value="Dapat">
+                                <input type="hidden" name="keterangan[]" value="Dapat">
                                 <span class="label label-sm label-success">Dapat Bantuan</span>
                                 @else
-                                <input type="hidden" name="keterangan" value="Tidak Dapat">
+                                <input type="hidden" name="keterangan[]" value="Tidak Dapat">
                                 <span class="label label-sm label-danger">Tidak Dapat Bantuan</span>
                                 @endif
                             </td>
@@ -108,9 +108,9 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Nanti Dulu,</button>
                         <button type="submit" class="btn btn-success"><i class="fa fa-check">  Ya, Simpan</button></i>
+                    </form>
                     </div>
                 </div>
-            </form>
         </div>
     </div>
 
@@ -126,7 +126,7 @@
             </div>
                     <div class="modal-footer bg-danger">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Nanti Dulu,</button>
-                        <a href="/admin/hapus_dataset" class="btn btn-success"><i class="fa fa-check"> Ya, Hapus</a></i>
+                        <a href="/admin/hapus_hasil_hitungan" class="btn btn-success"><i class="fa fa-check"> Ya, Hapus</a></i>
                     </div>
                 </div>
             </form>

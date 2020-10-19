@@ -14,8 +14,12 @@ use App\Imports\DataSiswaImport;
 use RealRashid\SweetAlert\Facades\Alert;
 use Maatwebsite\Excel\Facades\Excel;
 use App\DataSetModel;
+use App\HasilHitunganModel;
 use App\Teacher;
-
+use App\Exports\DataSiswaExport;
+use App\Exports\AkunWalasExport;
+use App\Exports\AkunSiswaExport;
+use PHPUnit\Framework\Constraint\Count;
 
 class AdminController extends Controller
 {
@@ -26,7 +30,14 @@ class AdminController extends Controller
 
     public function index()
     {
-        return view('admin.index');
+        $datatraining = DataTrainingModel::all()->count();
+        $datasiswa = DataSiswaModel::all()->count();
+        $akunsiswa = User::all()->count();
+        $akunadmin = Admin::all()->count();
+        $akunwalas = Teacher::all()->count();
+        $dataset = DataSetModel::all()->count();
+
+        return view('admin.index', compact('datatraining', 'datasiswa', 'akunsiswa', 'akunadmin', 'akunwalas', 'dataset'));
     }
 
     public function data_kriteria()
@@ -1491,11 +1502,7 @@ class AdminController extends Controller
 
     public function getdata_siswa()
     {
-
         $siswa = DataSiswaModel::all();
-
-
-
         return view('admin.data_siswa.index', compact('siswa', 'join_kelas'));
     }
 
@@ -1543,26 +1550,57 @@ class AdminController extends Controller
 
     public function get_insert_akunsiswa()
     {
-        $siswa = User::all();
-        return view('admin.akun_siswa.index', compact('siswa'));
+
+        $join_loop = DB::table('tbl_akunsiswa')
+            ->select(
+                'tbl_akunsiswa.nama_siswa',
+                'tbl_akunsiswa.nisn',
+                'tbl_akunsiswa.email',
+                'tbl_akunsiswa.password',
+                'tbl_akunsiswa.foto',
+                'tbl_akunsiswa.id',
+                'tbl_kelas.kelas',
+                'tbl_jurusan.jurusan'
+            )
+            ->join(
+                'tbl_datasiswa',
+                'tbl_datasiswa.nisn',
+                '=',
+                'tbl_akunsiswa.nisn'
+            )->join(
+                'tbl_kelas',
+                'tbl_kelas.id_kelas',
+                '=',
+                'tbl_datasiswa.id_kelas'
+            )->join(
+                'tbl_jurusan',
+                'tbl_jurusan.id_jurusan',
+                '=',
+                'tbl_datasiswa.id_jurusan'
+            )->get();
+
+
+        return view('admin.akun_siswa.index', compact('join_loop'));
     }
 
     public function post_insert_akunsiswa(Request $request)
     {
-        $this->validate($request, [
-            'nisn' =>   'required | size:6 | unique:tbl_akunsiswa',
-            'password' =>   'required | size:6',
-            'konfirmasi_password' =>   'same:password',
-            'foto' => 'image|mimes:jpg,png,jpeg|max:2048',
-        ]);
+        // $this->validate($request, [
+        //     'nisn' =>   'required | size:6 | unique:tbl_akunsiswa',
+        //     'password' =>   'required | size:6',
+        //     'konfirmasi_password' =>   'same:password',
+        //     'foto' => 'image|mimes:jpg,png,jpeg|max:2048',
+        // ]);
 
         $siswa = User::create([
             'nama_siswa' => $request->nama_siswa,
             'nisn' => $request->nisn,
             'email' => $request->email,
+            'email' => $request->email_dpn . $request->email_blkg,
             'password' => bcrypt($request->password),
             'foto' => $request->foto,
         ]);
+
 
         if ($request->has('foto')) {
             $request->file('foto')->move('foto_akunsiswa/', $request->file('foto')->getClientOriginalName());
@@ -1585,6 +1623,11 @@ class AdminController extends Controller
 
         Alert::success('Sukses', 'Akun Siswa Berhasil Di Tambah');
         return redirect('/admin/akunsiswa');
+    }
+
+    public function export_akunsiswa()
+    {
+        return Excel::download(new AkunSiswaExport, 'Data-Akun-Siswa-BansosApps.xlsx');
     }
 
     public function get_akunadmin()
@@ -1626,6 +1669,7 @@ class AdminController extends Controller
         $this->validate($request, [
             'file' => 'required|mimes:csv,xls,xlsx'
         ]);
+        // dd($request->all());
 
         Excel::import(new DataSiswaImport, $request->file('file'));
 
@@ -1740,9 +1784,14 @@ class AdminController extends Controller
             $siswa->save();
         }
 
-        Alert::success('Sukses', 'Data Berhasil Di Ubah');
+        // Alert::success('Sukses', 'Data Berhasil Di Ubah');
 
         return redirect('/admin/data_siswa')->with('success', 'Data Siswa Berhasil Diubah!');
+    }
+
+    public function export_datasiswa()
+    {
+        return Excel::download(new DataSiswaExport, 'Data-Siswa-BansosApps.xlsx');
     }
 
     public function data_walas()
@@ -1835,6 +1884,11 @@ class AdminController extends Controller
         Alert::success('Sukses', 'Data Berhasil Di Ubah');
 
         return redirect()->back();
+    }
+
+    public function export_akunwalas()
+    {
+        return Excel::download(new AkunWalasExport, 'Data-Akun-Walikelas-BansosApps.xlsx');
     }
 
     public function naik_kelas()
@@ -1956,18 +2010,23 @@ class AdminController extends Controller
 
     public function simpan_to_datatraining(Request $request)
     {
-        // dd($request->all());
-        $result = DataTrainingModel::create([
-            'tanggal_daftar' => $request->tanggal_daftar,
-            'nama_siswa' => $request->nama_siswa,
-            'nisn' => $request->nisn,
-            'kelas' => $request->kelas,
-            'status_kelengkapan_ortu' => $request->status_kelengkapan_ortu,
-            'status_rumah_ortu' => $request->status_rumah_ortu,
-            'status_pekerjaan_wali' => $request->status_pekerjaan_wali,
-            'status_sk_tidakmampu' => $request->status_sk_tidakmampu,
-            'keterangan' => $request->keterangan,
-        ]);
+        $nisn = $request->nisn;
+
+        foreach ($nisn as $key => $value) {
+            $siswa = new DataTrainingModel();
+            $siswa->tanggal_daftar =  $request->tanggal_daftar[$key];
+            $siswa->nama_siswa = $request->nama_siswa[$key];
+            $siswa->nisn = $value;
+            $siswa->kelas = $request->kelas[$key];
+            $siswa->status_kelengkapan_ortu = $request->status_kelengkapan_ortu[$key];
+            $siswa->status_rumah_ortu = $request->status_rumah_ortu[$key];
+            $siswa->status_pekerjaan_wali = $request->status_pekerjaan_wali[$key];
+            $siswa->status_sk_tidakmampu = $request->status_sk_tidakmampu[$key];
+            $siswa->keterangan = $request->keterangan[$key];
+            $siswa->save();
+        }
+
+
         Alert::success('Sukses', 'Data Hasil Verifikasi Berhasil Di Simpan Ke Data Training');
         return redirect()->back();
     }
@@ -2031,6 +2090,14 @@ class AdminController extends Controller
     public function hapus_data_training_all()
     {
         DataTrainingModel::getQuery()->delete();
+
+        Alert::success('Sukses', 'Data Berhasil Di Hapus Semua');
+        return redirect()->back();
+    }
+
+    public function hapus_hasil_hitungan()
+    {
+        HasilHitunganModel::getQuery()->delete();
 
         Alert::success('Sukses', 'Data Berhasil Di Hapus Semua');
         return redirect()->back();

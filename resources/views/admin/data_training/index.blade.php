@@ -250,6 +250,13 @@
     // Create the chart
     Highcharts.chart('highcharts_datatraining', {
         chart: {
+            backgroundColor: {
+            linearGradient: [0, 0, 500, 500],
+            stops: [
+                [0, 'rgb(255, 255, 255)'],
+                [1, 'rgb(200, 200, 255)']
+            ]
+        },
             type: 'column'
         },
         title: {

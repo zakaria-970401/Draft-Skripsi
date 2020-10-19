@@ -20,6 +20,7 @@
         <div class="col-xs-12">
             <div class="space-6"></div>
             <button type="button" data-target="#modal-daftar" data-toggle="modal" class="btn btn-primary"><i class="fa fa-plus"> Tambah Data Walas </button></i>
+            <a href="/admin/export_akunwalas" class="btn btn-warning"><i class="fa fa-cloud-download"> Download Excel Akun Walikelas</a></i>
             <h4 class="header blue bolder ">DATA WALI KELAS</h4>
             <table id="myTable" class="display">
                     <thead>

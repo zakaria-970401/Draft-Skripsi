@@ -79,7 +79,42 @@
 
 			<div class="navbar-buttons navbar-header pull-right" role="navigation">
 				<ul class="nav ace-nav">
-					<li class="light-blue dropdown-modal">
+					<li class="light-secondary dropdown-modal">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<i class="ace-icon fa fa-bell icon-animated-bell"></i>
+							<span class="badge badge-important">
+								<?php
+								use App\DataSetModel;
+								$notif = DataSetModel::where('kelas', Auth::user()->walikelas)->where('status', 1)->count();
+								?>
+								{{$notif}}
+							</span>
+						</a>
+
+						<ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+							<li class="dropdown-header">
+								<i class="ace-icon fa fa-exclamation-triangle"></i>
+								Pemberitahuan
+							</li>
+
+							<li class="dropdown-content">
+								<ul class="dropdown-menu dropdown-navbar navbar-pink">
+									<li>
+										<a href="/walas/bansos_anakdidik">
+											<div class="clearfix">
+												<span class="pull-left">
+													<i class="btn btn-xs no-hover btn-orange fa fa-bell"></i>
+													{{$notif}} Data Belum Di Proses
+												</span>
+											<span class="pull-right badge badge-info">{{$notif}}</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown-modal">
 						<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 							<img class="nav-user-photo" src=" {{ asset('foto_akunadmin/'.Auth::user()->foto)}}" style="width: 78px" alt="" alt="{{Auth::user()->nama}} Foto" />
 							<span class="user-info">

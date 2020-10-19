@@ -32,10 +32,15 @@ Route::GET('/adminlogout', 'Auth\AdminAuthController@adminlogout')->middleware('
 Route::GET('/walaslogout', 'Auth\WalasAuthController@walaslogout')->middleware('auth:teacher');
 Route::GET('/logout', 'Auth\LoginController@logout');
 
-// MODULE IMPORT EXCEL //
+// MODULE IMPORT EXPORT EXCEL //
 Route::post('/admin/import_akunsiswa', 'AdminController@import_akunsiswa');
 Route::post('/admin/import_datasiswa', 'AdminController@import_datasiswa');
 Route::post('/admin/insert_data_training', 'AdminController@insert_data_training');
+Route::post('/admin/import_akun_siswa', 'AdminController@import_akunsiswa');
+Route::get('/admin/export_datasiswa', 'AdminController@export_datasiswa');
+Route::get('/admin/export_akunwalas', 'AdminController@export_akunwalas');
+Route::get('/admin/export_akunsiswa', 'AdminController@export_akunsiswa');
+
 
 
 // MODULE AKUN SISWA //
@@ -87,6 +92,7 @@ Route::POST('/admin/proses_dataset_siswa/{id}', 'NaiveBaiyesController@hitung_da
 Route::POST('/admin/simpan_dataset_siswa', 'NaiveBaiyesController@post_hitung_dataset_siswa')->middleware('auth:admin');
 
 Route::POST('/admin/simpan_to_datatraining', 'AdminController@simpan_to_datatraining');
+Route::get('/admin/hapus_hasil_hitungan', 'AdminController@hapus_hasil_hitungan');
 
 
 
@@ -96,6 +102,7 @@ Route::POST('/admin/insertsiswa', 'AdminController@insert_datasiswa');
 Route::GET('/admin/hapus_datasiswa/{id}', 'AdminController@hapus_datasiswa');
 Route::GET('/admin/edit_datasiswa/{id}', 'AdminController@get_edit_datasiswa');
 Route::PATCH('/admin/update_datasiswa/{id}', 'AdminController@post_edit_datasiswa');
+
 
 // MODUL DATA KELAS //
 Route::get('/siswa/daftar_kelas', 'SiswaController@data_kelas');
@@ -116,6 +123,8 @@ Route::get('/admin/status_kelengkapan_ortu', 'GrafikController@status_kelengkapa
 Route::post('/admin/cari_statusortu_tahun', 'GrafikController@post_status_kelengkapan_ortu');
 Route::get('/admin/status_pekerjaan_ortu', 'GrafikController@status_pekerjaan_ortu');
 Route::post('/admin/cari_pekerjaanortu_tahun', 'GrafikController@post_status_pekerjaan_ortu');
+Route::get('/admin/status_rumah_ortu', 'GrafikController@status_rumah_ortu');
+Route::post('/admin/cari_rumahortu_tahun', 'GrafikController@post_status_rumah_ortu');
 
 //MODULE NAIK KELAS //
 Route::get('/admin/naik_kelas', 'AdminController@naik_kelas');

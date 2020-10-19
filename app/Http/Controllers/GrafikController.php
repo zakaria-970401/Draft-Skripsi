@@ -4076,4 +4076,1798 @@ class GrafikController extends Controller
             )
         );
     }
+
+    public function status_rumah_ortu()
+    {
+        // ! DATA KEALAS X-TKJ-A //
+        $rumahsendiri_xtkja_2020 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkja_2020 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkja_2020 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkja_2020 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkja_2021 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkja_2021 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkja_2021 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkja_2021 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkja_2022 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkja_2022 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkja_2022 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkja_2022 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkja_2023 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkja_2023 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkja_2023 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkja_2023 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkja_2024 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkja_2024 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkja_2024 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkja_2024 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkja_2025 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkja_2025 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkja_2025 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkja_2025 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-TKJ-B //
+        $rumahsendiri_xtkjb_2020 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkjb_2020 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkjb_2020 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkjb_2020 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkjb_2021 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkjb_2021 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkjb_2021 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkjb_2021 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkjb_2022 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkjb_2022 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkjb_2022 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkjb_2022 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkjb_2023 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkjb_2023 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkjb_2023 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkjb_2023 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkjb_2024 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkjb_2024 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkjb_2024 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkjb_2024 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkjb_2025 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkjb_2025 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkjb_2025 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkjb_2025 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-TKJ-C //
+        $rumahsendiri_xtkjc_2020 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkjc_2020 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkjc_2020 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkjc_2020 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkjc_2021 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkjc_2021 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkjc_2021 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkjc_2021 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkjc_2022 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkjc_2022 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkjc_2022 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkjc_2022 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkjc_2023 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkjc_2023 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkjc_2023 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkjc_2023 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkjc_2024 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkjc_2024 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkjc_2024 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkjc_2024 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkjc_2025 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkjc_2025 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkjc_2025 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkjc_2025 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-TKJ-D //
+        $rumahsendiri_xtkjd_2020 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkjd_2020 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkjd_2020 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkjd_2020 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkjd_2021 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkjd_2021 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkjd_2021 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkjd_2021 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkjd_2022 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkjd_2022 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkjd_2022 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkjd_2022 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkjd_2023 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkjd_2023 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkjd_2023 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkjd_2023 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkjd_2024 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkjd_2024 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkjd_2024 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkjd_2024 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkjd_2025 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkjd_2025 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkjd_2025 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkjd_2025 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-TKJ-A //
+        $rumahsendiri_xitkja_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkja_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkja_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkja_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkja_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkja_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkja_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkja_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkja_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkja_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkja_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkja_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkja_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkja_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkja_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkja_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkja_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkja_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkja_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkja_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkja_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkja_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkja_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkja_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-TKJ-B //
+        $rumahsendiri_xitkjb_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkjb_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkjb_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkjb_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkjb_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkjb_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkjb_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkjb_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkjb_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkjb_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkjb_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkjb_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkjb_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkjb_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkjb_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkjb_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkjb_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkjb_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkjb_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkjb_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkjb_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkjb_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkjb_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkjb_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-TKJ-C //
+        $rumahsendiri_xitkjc_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkjc_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkjc_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkjc_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkjc_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkjc_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkjc_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkjc_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkjc_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkjc_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkjc_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkjc_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkjc_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkjc_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkjc_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkjc_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkjc_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkjc_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkjc_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkjc_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkjc_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkjc_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkjc_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkjc_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-TKJ-A //
+        $rumahsendiri_xiitkja_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkja_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkja_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkja_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkja_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkja_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkja_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkja_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkja_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkja_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkja_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkja_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkja_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkja_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkja_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkja_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkja_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkja_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkja_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkja_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkja_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkja_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkja_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkja_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-TKJ-B //
+        $rumahsendiri_xiitkjb_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkjb_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkjb_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkjb_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkjb_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkjb_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkjb_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkjb_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkjb_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkjb_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkjb_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkjb_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkjb_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkjb_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkjb_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkjb_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkjb_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkjb_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkjb_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkjb_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkjb_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkjb_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkjb_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkjb_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-TKJ-C //
+        $rumahsendiri_xiitkjc_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkjc_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkjc_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkjc_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkjc_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkjc_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkjc_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkjc_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkjc_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkjc_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkjc_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkjc_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkjc_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkjc_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkjc_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkjc_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkjc_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkjc_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkjc_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkjc_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkjc_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkjc_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkjc_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkjc_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-tkr-A //
+        $rumahsendiri_xtkra_2020 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkra_2020 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkra_2020 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkra_2020 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkra_2021 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkra_2021 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkra_2021 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkra_2021 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkra_2022 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkra_2022 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkra_2022 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkra_2022 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkra_2023 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkra_2023 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkra_2023 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkra_2023 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkra_2024 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkra_2024 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkra_2024 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkra_2024 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkra_2025 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkra_2025 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkra_2025 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkra_2025 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-tkr-B //
+        $rumahsendiri_xtkrb_2020 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkrb_2020 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkrb_2020 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkrb_2020 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkrb_2021 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkrb_2021 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkrb_2021 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkrb_2021 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkrb_2022 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkrb_2022 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkrb_2022 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkrb_2022 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkrb_2023 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkrb_2023 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkrb_2023 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkrb_2023 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkrb_2024 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkrb_2024 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkrb_2024 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkrb_2024 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkrb_2025 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkrb_2025 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkrb_2025 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkrb_2025 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-tkr-C //
+        $rumahsendiri_xtkrc_2020 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkrc_2020 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkrc_2020 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkrc_2020 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkrc_2021 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkrc_2021 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkrc_2021 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkrc_2021 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkrc_2022 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkrc_2022 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkrc_2022 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkrc_2022 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkrc_2023 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkrc_2023 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkrc_2023 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkrc_2023 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkrc_2024 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkrc_2024 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkrc_2024 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkrc_2024 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkrc_2025 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkrc_2025 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkrc_2025 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkrc_2025 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-tkr-A //
+        $rumahsendiri_xitkra_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkra_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkra_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkra_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkra_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkra_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkra_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkra_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkra_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkra_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkra_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkra_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkra_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkra_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkra_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkra_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkra_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkra_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkra_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkra_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkra_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkra_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkra_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkra_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-tkr-B //
+        $rumahsendiri_xitkrb_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkrb_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkrb_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkrb_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkrb_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkrb_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkrb_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkrb_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkrb_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkrb_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkrb_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkrb_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkrb_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkrb_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkrb_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkrb_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkrb_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkrb_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkrb_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkrb_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkrb_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkrb_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkrb_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkrb_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-tkr-C //
+        $rumahsendiri_xitkrc_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkrc_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkrc_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkrc_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkrc_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkrc_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkrc_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkrc_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkrc_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkrc_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkrc_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkrc_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkrc_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkrc_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkrc_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkrc_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkrc_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkrc_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkrc_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkrc_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkrc_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkrc_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkrc_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkrc_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-tkr-A //
+        $rumahsendiri_xiitkra_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkra_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkra_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkra_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkra_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkra_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkra_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkra_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkra_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkra_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkra_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkra_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkra_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkra_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkra_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkra_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkra_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkra_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkra_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkra_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkra_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkra_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkra_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkra_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-tkr-B //
+        $rumahsendiri_xiitkrb_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkrb_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkrb_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkrb_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkrb_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkrb_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkrb_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkrb_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkrb_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkrb_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkrb_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkrb_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkrb_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkrb_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkrb_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkrb_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkrb_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkrb_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkrb_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkrb_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkrb_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkrb_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkrb_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkrb_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-tkr-C //
+        $rumahsendiri_xiitkrc_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkrc_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkrc_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkrc_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkrc_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkrc_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkrc_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkrc_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkrc_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkrc_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkrc_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkrc_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkrc_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkrc_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkrc_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkrc_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkrc_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkrc_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkrc_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkrc_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkrc_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkrc_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkrc_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkrc_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        return view(
+            'admin.analisa_data.data_bansos.status_rumah_ortu.index',
+            compact(
+                'rumahsendiri_xtkja_2020',
+                'rumahsendiri_xtkja_2021',
+                'rumahsendiri_xtkja_2022',
+                'rumahsendiri_xtkja_2023',
+                'rumahsendiri_xtkja_2024',
+                'rumahsendiri_xtkja_2025',
+                'rumahsewa_xtkja_2020',
+                'rumahsewa_xtkja_2021',
+                'rumahsewa_xtkja_2022',
+                'rumahsewa_xtkja_2023',
+                'rumahsewa_xtkja_2024',
+                'rumahsewa_xtkja_2025',
+                'kontrakan_xtkja_2020',
+                'kontrakan_xtkja_2021',
+                'kontrakan_xtkja_2022',
+                'kontrakan_xtkja_2023',
+                'kontrakan_xtkja_2024',
+                'kontrakan_xtkja_2025',
+                'saudara_xtkja_2020',
+                'saudara_xtkja_2021',
+                'saudara_xtkja_2022',
+                'saudara_xtkja_2023',
+                'saudara_xtkja_2024',
+                'saudara_xtkja_2025',
+                'rumahsendiri_xtkjb_2020',
+                'rumahsendiri_xtkjb_2021',
+                'rumahsendiri_xtkjb_2022',
+                'rumahsendiri_xtkjb_2023',
+                'rumahsendiri_xtkjb_2024',
+                'rumahsendiri_xtkjb_2025',
+                'rumahsewa_xtkjb_2020',
+                'rumahsewa_xtkjb_2021',
+                'rumahsewa_xtkjb_2022',
+                'rumahsewa_xtkjb_2023',
+                'rumahsewa_xtkjb_2024',
+                'rumahsewa_xtkjb_2025',
+                'kontrakan_xtkjb_2020',
+                'kontrakan_xtkjb_2021',
+                'kontrakan_xtkjb_2022',
+                'kontrakan_xtkjb_2023',
+                'kontrakan_xtkjb_2024',
+                'kontrakan_xtkjb_2025',
+                'saudara_xtkjb_2020',
+                'saudara_xtkjb_2021',
+                'saudara_xtkjb_2022',
+                'saudara_xtkjb_2023',
+                'saudara_xtkjb_2024',
+                'saudara_xtkjb_2025',
+                'rumahsendiri_xtkjc_2020',
+                'rumahsendiri_xtkjc_2021',
+                'rumahsendiri_xtkjc_2022',
+                'rumahsendiri_xtkjc_2023',
+                'rumahsendiri_xtkjc_2024',
+                'rumahsendiri_xtkjc_2025',
+                'rumahsewa_xtkjc_2020',
+                'rumahsewa_xtkjc_2021',
+                'rumahsewa_xtkjc_2022',
+                'rumahsewa_xtkjc_2023',
+                'rumahsewa_xtkjc_2024',
+                'rumahsewa_xtkjc_2025',
+                'kontrakan_xtkjc_2020',
+                'kontrakan_xtkjc_2021',
+                'kontrakan_xtkjc_2022',
+                'kontrakan_xtkjc_2023',
+                'kontrakan_xtkjc_2024',
+                'kontrakan_xtkjc_2025',
+                'saudara_xtkjc_2020',
+                'saudara_xtkjc_2021',
+                'saudara_xtkjc_2022',
+                'saudara_xtkjc_2023',
+                'saudara_xtkjc_2024',
+                'saudara_xtkjc_2025',
+                'rumahsendiri_xtkjd_2020',
+                'rumahsendiri_xtkjd_2021',
+                'rumahsendiri_xtkjd_2022',
+                'rumahsendiri_xtkjd_2023',
+                'rumahsendiri_xtkjd_2024',
+                'rumahsendiri_xtkjd_2025',
+                'rumahsewa_xtkjd_2020',
+                'rumahsewa_xtkjd_2021',
+                'rumahsewa_xtkjd_2022',
+                'rumahsewa_xtkjd_2023',
+                'rumahsewa_xtkjd_2024',
+                'rumahsewa_xtkjd_2025',
+                'kontrakan_xtkjd_2020',
+                'kontrakan_xtkjd_2021',
+                'kontrakan_xtkjd_2022',
+                'kontrakan_xtkjd_2023',
+                'kontrakan_xtkjd_2024',
+                'kontrakan_xtkjd_2025',
+                'saudara_xtkjd_2020',
+                'saudara_xtkjd_2021',
+                'saudara_xtkjd_2022',
+                'saudara_xtkjd_2023',
+                'saudara_xtkjd_2024',
+                'saudara_xtkjd_2025',
+                'rumahsendiri_xitkja_2020',
+                'rumahsendiri_xitkja_2021',
+                'rumahsendiri_xitkja_2022',
+                'rumahsendiri_xitkja_2023',
+                'rumahsendiri_xitkja_2024',
+                'rumahsendiri_xitkja_2025',
+                'rumahsewa_xitkja_2020',
+                'rumahsewa_xitkja_2021',
+                'rumahsewa_xitkja_2022',
+                'rumahsewa_xitkja_2023',
+                'rumahsewa_xitkja_2024',
+                'rumahsewa_xitkja_2025',
+                'kontrakan_xitkja_2020',
+                'kontrakan_xitkja_2021',
+                'kontrakan_xitkja_2022',
+                'kontrakan_xitkja_2023',
+                'kontrakan_xitkja_2024',
+                'kontrakan_xitkja_2025',
+                'saudara_xitkja_2020',
+                'saudara_xitkja_2021',
+                'saudara_xitkja_2022',
+                'saudara_xitkja_2023',
+                'saudara_xitkja_2024',
+                'saudara_xitkja_2025',
+                'rumahsendiri_xitkjb_2020',
+                'rumahsendiri_xitkjb_2021',
+                'rumahsendiri_xitkjb_2022',
+                'rumahsendiri_xitkjb_2023',
+                'rumahsendiri_xitkjb_2024',
+                'rumahsendiri_xitkjb_2025',
+                'rumahsewa_xitkjb_2020',
+                'rumahsewa_xitkjb_2021',
+                'rumahsewa_xitkjb_2022',
+                'rumahsewa_xitkjb_2023',
+                'rumahsewa_xitkjb_2024',
+                'rumahsewa_xitkjb_2025',
+                'kontrakan_xitkjb_2020',
+                'kontrakan_xitkjb_2021',
+                'kontrakan_xitkjb_2022',
+                'kontrakan_xitkjb_2023',
+                'kontrakan_xitkjb_2024',
+                'kontrakan_xitkjb_2025',
+                'saudara_xitkjb_2020',
+                'saudara_xitkjb_2021',
+                'saudara_xitkjb_2022',
+                'saudara_xitkjb_2023',
+                'saudara_xitkjb_2024',
+                'saudara_xitkjb_2025',
+                'rumahsendiri_xitkjc_2020',
+                'rumahsendiri_xitkjc_2021',
+                'rumahsendiri_xitkjc_2022',
+                'rumahsendiri_xitkjc_2023',
+                'rumahsendiri_xitkjc_2024',
+                'rumahsendiri_xitkjc_2025',
+                'rumahsewa_xitkjc_2020',
+                'rumahsewa_xitkjc_2021',
+                'rumahsewa_xitkjc_2022',
+                'rumahsewa_xitkjc_2023',
+                'rumahsewa_xitkjc_2024',
+                'rumahsewa_xitkjc_2025',
+                'kontrakan_xitkjc_2020',
+                'kontrakan_xitkjc_2021',
+                'kontrakan_xitkjc_2022',
+                'kontrakan_xitkjc_2023',
+                'kontrakan_xitkjc_2024',
+                'kontrakan_xitkjc_2025',
+                'saudara_xitkjc_2020',
+                'saudara_xitkjc_2021',
+                'saudara_xitkjc_2022',
+                'saudara_xitkjc_2023',
+                'saudara_xitkjc_2024',
+                'saudara_xitkjc_2025',
+                'rumahsendiri_xiitkja_2020',
+                'rumahsendiri_xiitkja_2021',
+                'rumahsendiri_xiitkja_2022',
+                'rumahsendiri_xiitkja_2023',
+                'rumahsendiri_xiitkja_2024',
+                'rumahsendiri_xiitkja_2025',
+                'rumahsewa_xiitkja_2020',
+                'rumahsewa_xiitkja_2021',
+                'rumahsewa_xiitkja_2022',
+                'rumahsewa_xiitkja_2023',
+                'rumahsewa_xiitkja_2024',
+                'rumahsewa_xiitkja_2025',
+                'kontrakan_xiitkja_2020',
+                'kontrakan_xiitkja_2021',
+                'kontrakan_xiitkja_2022',
+                'kontrakan_xiitkja_2023',
+                'kontrakan_xiitkja_2024',
+                'kontrakan_xiitkja_2025',
+                'saudara_xiitkja_2020',
+                'saudara_xiitkja_2021',
+                'saudara_xiitkja_2022',
+                'saudara_xiitkja_2023',
+                'saudara_xiitkja_2024',
+                'saudara_xiitkja_2025',
+                'rumahsendiri_xiitkjb_2020',
+                'rumahsendiri_xiitkjb_2021',
+                'rumahsendiri_xiitkjb_2022',
+                'rumahsendiri_xiitkjb_2023',
+                'rumahsendiri_xiitkjb_2024',
+                'rumahsendiri_xiitkjb_2025',
+                'rumahsewa_xiitkjb_2020',
+                'rumahsewa_xiitkjb_2021',
+                'rumahsewa_xiitkjb_2022',
+                'rumahsewa_xiitkjb_2023',
+                'rumahsewa_xiitkjb_2024',
+                'rumahsewa_xiitkjb_2025',
+                'kontrakan_xiitkjb_2020',
+                'kontrakan_xiitkjb_2021',
+                'kontrakan_xiitkjb_2022',
+                'kontrakan_xiitkjb_2023',
+                'kontrakan_xiitkjb_2024',
+                'kontrakan_xiitkjb_2025',
+                'saudara_xiitkjb_2020',
+                'saudara_xiitkjb_2021',
+                'saudara_xiitkjb_2022',
+                'saudara_xiitkjb_2023',
+                'saudara_xiitkjb_2024',
+                'saudara_xiitkjb_2025',
+                'rumahsendiri_xiitkjc_2020',
+                'rumahsendiri_xiitkjc_2021',
+                'rumahsendiri_xiitkjc_2022',
+                'rumahsendiri_xiitkjc_2023',
+                'rumahsendiri_xiitkjc_2024',
+                'rumahsendiri_xiitkjc_2025',
+                'rumahsewa_xiitkjc_2020',
+                'rumahsewa_xiitkjc_2021',
+                'rumahsewa_xiitkjc_2022',
+                'rumahsewa_xiitkjc_2023',
+                'rumahsewa_xiitkjc_2024',
+                'rumahsewa_xiitkjc_2025',
+                'kontrakan_xiitkjc_2020',
+                'kontrakan_xiitkjc_2021',
+                'kontrakan_xiitkjc_2022',
+                'kontrakan_xiitkjc_2023',
+                'kontrakan_xiitkjc_2024',
+                'kontrakan_xiitkjc_2025',
+                'saudara_xiitkjc_2020',
+                'saudara_xiitkjc_2021',
+                'saudara_xiitkjc_2022',
+                'saudara_xiitkjc_2023',
+                'saudara_xiitkjc_2024',
+                'saudara_xiitkjc_2025',
+                'rumahsendiri_xtkra_2020',
+                'rumahsendiri_xtkra_2021',
+                'rumahsendiri_xtkra_2022',
+                'rumahsendiri_xtkra_2023',
+                'rumahsendiri_xtkra_2024',
+                'rumahsendiri_xtkra_2025',
+                'rumahsewa_xtkra_2020',
+                'rumahsewa_xtkra_2021',
+                'rumahsewa_xtkra_2022',
+                'rumahsewa_xtkra_2023',
+                'rumahsewa_xtkra_2024',
+                'rumahsewa_xtkra_2025',
+                'kontrakan_xtkra_2020',
+                'kontrakan_xtkra_2021',
+                'kontrakan_xtkra_2022',
+                'kontrakan_xtkra_2023',
+                'kontrakan_xtkra_2024',
+                'kontrakan_xtkra_2025',
+                'saudara_xtkra_2020',
+                'saudara_xtkra_2021',
+                'saudara_xtkra_2022',
+                'saudara_xtkra_2023',
+                'saudara_xtkra_2024',
+                'saudara_xtkra_2025',
+                'rumahsendiri_xtkrb_2020',
+                'rumahsendiri_xtkrb_2021',
+                'rumahsendiri_xtkrb_2022',
+                'rumahsendiri_xtkrb_2023',
+                'rumahsendiri_xtkrb_2024',
+                'rumahsendiri_xtkrb_2025',
+                'rumahsewa_xtkrb_2020',
+                'rumahsewa_xtkrb_2021',
+                'rumahsewa_xtkrb_2022',
+                'rumahsewa_xtkrb_2023',
+                'rumahsewa_xtkrb_2024',
+                'rumahsewa_xtkrb_2025',
+                'kontrakan_xtkrb_2020',
+                'kontrakan_xtkrb_2021',
+                'kontrakan_xtkrb_2022',
+                'kontrakan_xtkrb_2023',
+                'kontrakan_xtkrb_2024',
+                'kontrakan_xtkrb_2025',
+                'saudara_xtkrb_2020',
+                'saudara_xtkrb_2021',
+                'saudara_xtkrb_2022',
+                'saudara_xtkrb_2023',
+                'saudara_xtkrb_2024',
+                'saudara_xtkrb_2025',
+                'rumahsendiri_xtkrc_2020',
+                'rumahsendiri_xtkrc_2021',
+                'rumahsendiri_xtkrc_2022',
+                'rumahsendiri_xtkrc_2023',
+                'rumahsendiri_xtkrc_2024',
+                'rumahsendiri_xtkrc_2025',
+                'rumahsewa_xtkrc_2020',
+                'rumahsewa_xtkrc_2021',
+                'rumahsewa_xtkrc_2022',
+                'rumahsewa_xtkrc_2023',
+                'rumahsewa_xtkrc_2024',
+                'rumahsewa_xtkrc_2025',
+                'kontrakan_xtkrc_2020',
+                'kontrakan_xtkrc_2021',
+                'kontrakan_xtkrc_2022',
+                'kontrakan_xtkrc_2023',
+                'kontrakan_xtkrc_2024',
+                'kontrakan_xtkrc_2025',
+                'saudara_xtkrc_2020',
+                'saudara_xtkrc_2021',
+                'saudara_xtkrc_2022',
+                'saudara_xtkrc_2023',
+                'saudara_xtkrc_2024',
+                'saudara_xtkrc_2025',
+                'rumahsendiri_xtkrd_2020',
+                'rumahsendiri_xtkrd_2021',
+                'rumahsendiri_xtkrd_2022',
+                'rumahsendiri_xtkrd_2023',
+                'rumahsendiri_xtkrd_2024',
+                'rumahsendiri_xtkrd_2025',
+                'rumahsewa_xtkrd_2020',
+                'rumahsewa_xtkrd_2021',
+                'rumahsewa_xtkrd_2022',
+                'rumahsewa_xtkrd_2023',
+                'rumahsewa_xtkrd_2024',
+                'rumahsewa_xtkrd_2025',
+                'kontrakan_xtkrd_2020',
+                'kontrakan_xtkrd_2021',
+                'kontrakan_xtkrd_2022',
+                'kontrakan_xtkrd_2023',
+                'kontrakan_xtkrd_2024',
+                'kontrakan_xtkrd_2025',
+                'saudara_xtkrd_2020',
+                'saudara_xtkrd_2021',
+                'saudara_xtkrd_2022',
+                'saudara_xtkrd_2023',
+                'saudara_xtkrd_2024',
+                'saudara_xtkrd_2025',
+                'rumahsendiri_xitkra_2020',
+                'rumahsendiri_xitkra_2021',
+                'rumahsendiri_xitkra_2022',
+                'rumahsendiri_xitkra_2023',
+                'rumahsendiri_xitkra_2024',
+                'rumahsendiri_xitkra_2025',
+                'rumahsewa_xitkra_2020',
+                'rumahsewa_xitkra_2021',
+                'rumahsewa_xitkra_2022',
+                'rumahsewa_xitkra_2023',
+                'rumahsewa_xitkra_2024',
+                'rumahsewa_xitkra_2025',
+                'kontrakan_xitkra_2020',
+                'kontrakan_xitkra_2021',
+                'kontrakan_xitkra_2022',
+                'kontrakan_xitkra_2023',
+                'kontrakan_xitkra_2024',
+                'kontrakan_xitkra_2025',
+                'saudara_xitkra_2020',
+                'saudara_xitkra_2021',
+                'saudara_xitkra_2022',
+                'saudara_xitkra_2023',
+                'saudara_xitkra_2024',
+                'saudara_xitkra_2025',
+                'rumahsendiri_xitkrb_2020',
+                'rumahsendiri_xitkrb_2021',
+                'rumahsendiri_xitkrb_2022',
+                'rumahsendiri_xitkrb_2023',
+                'rumahsendiri_xitkrb_2024',
+                'rumahsendiri_xitkrb_2025',
+                'rumahsewa_xitkrb_2020',
+                'rumahsewa_xitkrb_2021',
+                'rumahsewa_xitkrb_2022',
+                'rumahsewa_xitkrb_2023',
+                'rumahsewa_xitkrb_2024',
+                'rumahsewa_xitkrb_2025',
+                'kontrakan_xitkrb_2020',
+                'kontrakan_xitkrb_2021',
+                'kontrakan_xitkrb_2022',
+                'kontrakan_xitkrb_2023',
+                'kontrakan_xitkrb_2024',
+                'kontrakan_xitkrb_2025',
+                'saudara_xitkrb_2020',
+                'saudara_xitkrb_2021',
+                'saudara_xitkrb_2022',
+                'saudara_xitkrb_2023',
+                'saudara_xitkrb_2024',
+                'saudara_xitkrb_2025',
+                'rumahsendiri_xitkrc_2020',
+                'rumahsendiri_xitkrc_2021',
+                'rumahsendiri_xitkrc_2022',
+                'rumahsendiri_xitkrc_2023',
+                'rumahsendiri_xitkrc_2024',
+                'rumahsendiri_xitkrc_2025',
+                'rumahsewa_xitkrc_2020',
+                'rumahsewa_xitkrc_2021',
+                'rumahsewa_xitkrc_2022',
+                'rumahsewa_xitkrc_2023',
+                'rumahsewa_xitkrc_2024',
+                'rumahsewa_xitkrc_2025',
+                'kontrakan_xitkrc_2020',
+                'kontrakan_xitkrc_2021',
+                'kontrakan_xitkrc_2022',
+                'kontrakan_xitkrc_2023',
+                'kontrakan_xitkrc_2024',
+                'kontrakan_xitkrc_2025',
+                'saudara_xitkrc_2020',
+                'saudara_xitkrc_2021',
+                'saudara_xitkrc_2022',
+                'saudara_xitkrc_2023',
+                'saudara_xitkrc_2024',
+                'saudara_xitkrc_2025',
+                'rumahsendiri_xiitkra_2020',
+                'rumahsendiri_xiitkra_2021',
+                'rumahsendiri_xiitkra_2022',
+                'rumahsendiri_xiitkra_2023',
+                'rumahsendiri_xiitkra_2024',
+                'rumahsendiri_xiitkra_2025',
+                'rumahsewa_xiitkra_2020',
+                'rumahsewa_xiitkra_2021',
+                'rumahsewa_xiitkra_2022',
+                'rumahsewa_xiitkra_2023',
+                'rumahsewa_xiitkra_2024',
+                'rumahsewa_xiitkra_2025',
+                'kontrakan_xiitkra_2020',
+                'kontrakan_xiitkra_2021',
+                'kontrakan_xiitkra_2022',
+                'kontrakan_xiitkra_2023',
+                'kontrakan_xiitkra_2024',
+                'kontrakan_xiitkra_2025',
+                'saudara_xiitkra_2020',
+                'saudara_xiitkra_2021',
+                'saudara_xiitkra_2022',
+                'saudara_xiitkra_2023',
+                'saudara_xiitkra_2024',
+                'saudara_xiitkra_2025',
+                'rumahsendiri_xiitkrb_2020',
+                'rumahsendiri_xiitkrb_2021',
+                'rumahsendiri_xiitkrb_2022',
+                'rumahsendiri_xiitkrb_2023',
+                'rumahsendiri_xiitkrb_2024',
+                'rumahsendiri_xiitkrb_2025',
+                'rumahsewa_xiitkrb_2020',
+                'rumahsewa_xiitkrb_2021',
+                'rumahsewa_xiitkrb_2022',
+                'rumahsewa_xiitkrb_2023',
+                'rumahsewa_xiitkrb_2024',
+                'rumahsewa_xiitkrb_2025',
+                'kontrakan_xiitkrb_2020',
+                'kontrakan_xiitkrb_2021',
+                'kontrakan_xiitkrb_2022',
+                'kontrakan_xiitkrb_2023',
+                'kontrakan_xiitkrb_2024',
+                'kontrakan_xiitkrb_2025',
+                'saudara_xiitkrb_2020',
+                'saudara_xiitkrb_2021',
+                'saudara_xiitkrb_2022',
+                'saudara_xiitkrb_2023',
+                'saudara_xiitkrb_2024',
+                'saudara_xiitkrb_2025',
+                'rumahsendiri_xiitkrc_2020',
+                'rumahsendiri_xiitkrc_2021',
+                'rumahsendiri_xiitkrc_2022',
+                'rumahsendiri_xiitkrc_2023',
+                'rumahsendiri_xiitkrc_2024',
+                'rumahsendiri_xiitkrc_2025',
+                'rumahsewa_xiitkrc_2020',
+                'rumahsewa_xiitkrc_2021',
+                'rumahsewa_xiitkrc_2022',
+                'rumahsewa_xiitkrc_2023',
+                'rumahsewa_xiitkrc_2024',
+                'rumahsewa_xiitkrc_2025',
+                'kontrakan_xiitkrc_2020',
+                'kontrakan_xiitkrc_2021',
+                'kontrakan_xiitkrc_2022',
+                'kontrakan_xiitkrc_2023',
+                'kontrakan_xiitkrc_2024',
+                'kontrakan_xiitkrc_2025',
+                'saudara_xiitkrc_2020',
+                'saudara_xiitkrc_2021',
+                'saudara_xiitkrc_2022',
+                'saudara_xiitkrc_2023',
+                'saudara_xiitkrc_2024',
+                'saudara_xiitkrc_2025'
+            )
+        );
+    }
+
+    public function post_status_rumah_ortu(Request $request)
+    {
+        $request_tahun = $request->tahun;
+
+        // ! KELAS X-TKJA //
+        $rumahsendiri_xtkja = HasilHitunganModel::where('kelas', 'X-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xtkja = HasilHitunganModel::where('kelas', 'X-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xtkja = HasilHitunganModel::where('kelas', 'X-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xtkja = HasilHitunganModel::where('kelas', 'X-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS X-tkjb //
+        $rumahsendiri_xtkjb = HasilHitunganModel::where('kelas', 'X-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xtkjb = HasilHitunganModel::where('kelas', 'X-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xtkjb = HasilHitunganModel::where('kelas', 'X-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xtkjb = HasilHitunganModel::where('kelas', 'X-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS X-tkjc //
+        $rumahsendiri_xtkjc = HasilHitunganModel::where('kelas', 'X-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xtkjc = HasilHitunganModel::where('kelas', 'X-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xtkjc = HasilHitunganModel::where('kelas', 'X-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xtkjc = HasilHitunganModel::where('kelas', 'X-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS X-tkjd //
+        $rumahsendiri_xtkjd = HasilHitunganModel::where('kelas', 'X-TKJ-D')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xtkjd = HasilHitunganModel::where('kelas', 'X-TKJ-D')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xtkjd = HasilHitunganModel::where('kelas', 'X-TKJ-D')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xtkjd = HasilHitunganModel::where('kelas', 'X-TKJ-D')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XI-tkja //
+        $rumahsendiri_xitkja = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xitkja = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xitkja = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xitkja = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XI-tkjb //
+        $rumahsendiri_xitkjb = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xitkjb = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xitkjb = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xitkjb = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XI-tkjc //
+        $rumahsendiri_xitkjc = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xitkjc = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xitkjc = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xitkjc = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XIi-tkja //
+        $rumahsendiri_xiitkja = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xiitkja = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xiitkja = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xiitkja = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XIi-tkjb //
+        $rumahsendiri_xiitkjb = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xiitkjb = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xiitkjb = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xiitkjb = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XIi-tkjc //
+        $rumahsendiri_xiitkjc = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xiitkjc = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xiitkjc = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xiitkjc = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS X-tkrA //
+        $rumahsendiri_xtkra = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xtkra = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xtkra = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xtkra = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS X-tkrb //
+        $rumahsendiri_xtkrb = HasilHitunganModel::where('kelas', 'X-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xtkrb = HasilHitunganModel::where('kelas', 'X-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xtkrb = HasilHitunganModel::where('kelas', 'X-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xtkrb = HasilHitunganModel::where('kelas', 'X-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS X-tkrc //
+        $rumahsendiri_xtkrc = HasilHitunganModel::where('kelas', 'X-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xtkrc = HasilHitunganModel::where('kelas', 'X-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xtkrc = HasilHitunganModel::where('kelas', 'X-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xtkrc = HasilHitunganModel::where('kelas', 'X-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS X-tkrd //
+        $rumahsendiri_xtkrd = HasilHitunganModel::where('kelas', 'X-tkr-D')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xtkrd = HasilHitunganModel::where('kelas', 'X-tkr-D')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xtkrd = HasilHitunganModel::where('kelas', 'X-tkr-D')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xtkrd = HasilHitunganModel::where('kelas', 'X-tkr-D')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XI-tkra //
+        $rumahsendiri_xitkra = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xitkra = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xitkra = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xitkra = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XI-tkrb //
+        $rumahsendiri_xitkrb = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xitkrb = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xitkrb = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xitkrb = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XI-tkrc //
+        $rumahsendiri_xitkrc = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xitkrc = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xitkrc = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xitkrc = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XIi-tkra //
+        $rumahsendiri_xiitkra = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xiitkra = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xiitkra = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xiitkra = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XIi-tkrb //
+        $rumahsendiri_xiitkrb = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xiitkrb = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xiitkrb = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xiitkrb = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! KELAS XIi-tkrc //
+        $rumahsendiri_xiitkrc = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', $request_tahun)->count();
+        $rumahsewa_xiitkrc = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', $request_tahun)->count();
+        $kontrakan_xiitkrc = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', $request_tahun)->count();
+        $saudara_xiitkrc = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', $request_tahun)->count();
+
+        // ! DATA KEALAS X-TKJ-A //
+        $rumahsendiri_xtkja_2020 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkja_2020 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkja_2020 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkja_2020 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkja_2021 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkja_2021 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkja_2021 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkja_2021 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkja_2022 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkja_2022 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkja_2022 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkja_2022 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkja_2023 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkja_2023 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkja_2023 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkja_2023 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkja_2024 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkja_2024 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkja_2024 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkja_2024 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkja_2025 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkja_2025 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkja_2025 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkja_2025 = HasilHitunganModel::where('kelas', 'X-tkj-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-TKJ-B //
+        $rumahsendiri_xtkjb_2020 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkjb_2020 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkjb_2020 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkjb_2020 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkjb_2021 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkjb_2021 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkjb_2021 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkjb_2021 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkjb_2022 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkjb_2022 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkjb_2022 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkjb_2022 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkjb_2023 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkjb_2023 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkjb_2023 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkjb_2023 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkjb_2024 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkjb_2024 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkjb_2024 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkjb_2024 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkjb_2025 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkjb_2025 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkjb_2025 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkjb_2025 = HasilHitunganModel::where('kelas', 'X-tkj-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-TKJ-C //
+        $rumahsendiri_xtkjc_2020 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkjc_2020 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkjc_2020 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkjc_2020 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkjc_2021 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkjc_2021 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkjc_2021 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkjc_2021 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkjc_2022 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkjc_2022 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkjc_2022 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkjc_2022 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkjc_2023 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkjc_2023 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkjc_2023 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkjc_2023 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkjc_2024 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkjc_2024 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkjc_2024 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkjc_2024 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkjc_2025 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkjc_2025 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkjc_2025 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkjc_2025 = HasilHitunganModel::where('kelas', 'X-tkj-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-TKJ-D //
+        $rumahsendiri_xtkjd_2020 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkjd_2020 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkjd_2020 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkjd_2020 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkjd_2021 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkjd_2021 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkjd_2021 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkjd_2021 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkjd_2022 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkjd_2022 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkjd_2022 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkjd_2022 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkjd_2023 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkjd_2023 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkjd_2023 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkjd_2023 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkjd_2024 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkjd_2024 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkjd_2024 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkjd_2024 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkjd_2025 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkjd_2025 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkjd_2025 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkjd_2025 = HasilHitunganModel::where('kelas', 'X-tkj-d')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-TKJ-A //
+        $rumahsendiri_xitkja_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkja_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkja_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkja_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkja_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkja_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkja_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkja_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkja_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkja_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkja_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkja_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkja_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkja_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkja_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkja_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkja_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkja_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkja_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkja_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkja_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkja_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkja_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkja_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-TKJ-B //
+        $rumahsendiri_xitkjb_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkjb_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkjb_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkjb_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkjb_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkjb_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkjb_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkjb_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkjb_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkjb_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkjb_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkjb_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkjb_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkjb_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkjb_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkjb_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkjb_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkjb_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkjb_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkjb_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkjb_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkjb_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkjb_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkjb_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-TKJ-C //
+        $rumahsendiri_xitkjc_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkjc_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkjc_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkjc_2020 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkjc_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkjc_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkjc_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkjc_2021 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkjc_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkjc_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkjc_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkjc_2022 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkjc_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkjc_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkjc_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkjc_2023 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkjc_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkjc_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkjc_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkjc_2024 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkjc_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkjc_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkjc_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkjc_2025 = HasilHitunganModel::where('kelas', 'XI-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-TKJ-A //
+        $rumahsendiri_xiitkja_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkja_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkja_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkja_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkja_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkja_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkja_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkja_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkja_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkja_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkja_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkja_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkja_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkja_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkja_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkja_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkja_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkja_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkja_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkja_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkja_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkja_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkja_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkja_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-TKJ-B //
+        $rumahsendiri_xiitkjb_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkjb_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkjb_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkjb_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkjb_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkjb_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkjb_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkjb_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkjb_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkjb_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkjb_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkjb_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkjb_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkjb_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkjb_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkjb_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkjb_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkjb_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkjb_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkjb_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkjb_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkjb_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkjb_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkjb_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-TKJ-C //
+        $rumahsendiri_xiitkjc_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkjc_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkjc_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkjc_2020 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkjc_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkjc_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkjc_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkjc_2021 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkjc_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkjc_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkjc_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkjc_2022 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkjc_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkjc_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkjc_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkjc_2023 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkjc_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkjc_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkjc_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkjc_2024 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkjc_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkjc_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkjc_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkjc_2025 = HasilHitunganModel::where('kelas', 'XII-TKJ-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-tkr-A //
+        $rumahsendiri_xtkra_2020 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkra_2020 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkra_2020 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkra_2020 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkra_2021 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkra_2021 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkra_2021 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkra_2021 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkra_2022 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkra_2022 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkra_2022 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkra_2022 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkra_2023 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkra_2023 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkra_2023 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkra_2023 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkra_2024 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkra_2024 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkra_2024 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkra_2024 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkra_2025 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkra_2025 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkra_2025 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkra_2025 = HasilHitunganModel::where('kelas', 'X-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-tkr-B //
+        $rumahsendiri_xtkrb_2020 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkrb_2020 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkrb_2020 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkrb_2020 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkrb_2021 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkrb_2021 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkrb_2021 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkrb_2021 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkrb_2022 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkrb_2022 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkrb_2022 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkrb_2022 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkrb_2023 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkrb_2023 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkrb_2023 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkrb_2023 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkrb_2024 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkrb_2024 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkrb_2024 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkrb_2024 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkrb_2025 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkrb_2025 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkrb_2025 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkrb_2025 = HasilHitunganModel::where('kelas', 'X-tkr-b')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS X-tkr-C //
+        $rumahsendiri_xtkrc_2020 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xtkrc_2020 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xtkrc_2020 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xtkrc_2020 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xtkrc_2021 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xtkrc_2021 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xtkrc_2021 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xtkrc_2021 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xtkrc_2022 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xtkrc_2022 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xtkrc_2022 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xtkrc_2022 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xtkrc_2023 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xtkrc_2023 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xtkrc_2023 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xtkrc_2023 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xtkrc_2024 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xtkrc_2024 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xtkrc_2024 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xtkrc_2024 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xtkrc_2025 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xtkrc_2025 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xtkrc_2025 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xtkrc_2025 = HasilHitunganModel::where('kelas', 'X-tkr-c')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-tkr-A //
+        $rumahsendiri_xitkra_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkra_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkra_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkra_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkra_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkra_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkra_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkra_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkra_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkra_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkra_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkra_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkra_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkra_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkra_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkra_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkra_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkra_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkra_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkra_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkra_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkra_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkra_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkra_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-tkr-B //
+        $rumahsendiri_xitkrb_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkrb_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkrb_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkrb_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkrb_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkrb_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkrb_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkrb_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkrb_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkrb_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkrb_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkrb_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkrb_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkrb_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkrb_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkrb_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkrb_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkrb_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkrb_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkrb_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkrb_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkrb_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkrb_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkrb_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XI-tkr-C //
+        $rumahsendiri_xitkrc_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xitkrc_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xitkrc_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xitkrc_2020 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xitkrc_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xitkrc_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xitkrc_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xitkrc_2021 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xitkrc_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xitkrc_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xitkrc_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xitkrc_2022 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xitkrc_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xitkrc_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xitkrc_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xitkrc_2023 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xitkrc_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xitkrc_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xitkrc_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xitkrc_2024 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xitkrc_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xitkrc_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xitkrc_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xitkrc_2025 = HasilHitunganModel::where('kelas', 'XI-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-tkr-A //
+        $rumahsendiri_xiitkra_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkra_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkra_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkra_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkra_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkra_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkra_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkra_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkra_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkra_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkra_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkra_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkra_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkra_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkra_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkra_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkra_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkra_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkra_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkra_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkra_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkra_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkra_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkra_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-A')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-tkr-B //
+        $rumahsendiri_xiitkrb_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkrb_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkrb_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkrb_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkrb_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkrb_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkrb_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkrb_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkrb_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkrb_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkrb_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkrb_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkrb_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkrb_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkrb_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkrb_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkrb_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkrb_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkrb_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkrb_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkrb_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkrb_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkrb_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkrb_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-B')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        // ! DATA KEALAS XiI-tkr-C //
+        $rumahsendiri_xiitkrc_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2020')->count();
+        $rumahsewa_xiitkrc_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2020')->count();
+        $kontrakan_xiitkrc_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2020')->count();
+        $saudara_xiitkrc_2020 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2020')->count();
+
+        $rumahsendiri_xiitkrc_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2021')->count();
+        $rumahsewa_xiitkrc_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2021')->count();
+        $kontrakan_xiitkrc_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2021')->count();
+        $saudara_xiitkrc_2021 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2021')->count();
+
+        $rumahsendiri_xiitkrc_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2022')->count();
+        $rumahsewa_xiitkrc_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2022')->count();
+        $kontrakan_xiitkrc_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2022')->count();
+        $saudara_xiitkrc_2022 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2022')->count();
+
+        $rumahsendiri_xiitkrc_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2023')->count();
+        $rumahsewa_xiitkrc_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2023')->count();
+        $kontrakan_xiitkrc_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2023')->count();
+        $saudara_xiitkrc_2023 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2023')->count();
+
+        $rumahsendiri_xiitkrc_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2024')->count();
+        $rumahsewa_xiitkrc_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2024')->count();
+        $kontrakan_xiitkrc_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2024')->count();
+        $saudara_xiitkrc_2024 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2024')->count();
+
+        $rumahsendiri_xiitkrc_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sendiri')->whereYear('tgl_daftar', '2025')->count();
+        $rumahsewa_xiitkrc_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Rumah Sewa')->whereYear('tgl_daftar', '2025')->count();
+        $kontrakan_xiitkrc_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Kontrakan')->whereYear('tgl_daftar', '2025')->count();
+        $saudara_xiitkrc_2025 = HasilHitunganModel::where('kelas', 'XII-tkr-C')->where('status_rumah_ortu', 'Tinggal Dengan Saudara')->whereYear('tgl_daftar', '2025')->count();
+
+        return view('admin.analisa_data.data_bansos.status_rumah_ortu.result');
+    }
 }

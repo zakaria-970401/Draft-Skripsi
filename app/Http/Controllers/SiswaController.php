@@ -28,9 +28,18 @@ class SiswaController extends Controller
     {
         $nisn = Auth::user()->nisn;
 
+        $join_foto = DB::table('tbl_akunsiswa')->select(
+            'tbl_datasiswa.foto'
+        )->join(
+            'tbl_datasiswa',
+            'tbl_akunsiswa.nisn',
+            '=',
+            'tbl_datasiswa.nisn'
+        )->where('tbl_datasiswa.nisn', '=', Auth::user()->nisn)->first();
+
         $status =  DataSetModel::where('nisn', $nisn)->get();
 
-        return view('siswa.index', compact('status'));
+        return view('siswa.index', compact('status', 'join_foto'));
     }
 
     public function profile()
@@ -46,7 +55,6 @@ class SiswaController extends Controller
             'tbl_datasiswa.no_hp',
             'tbl_datasiswa.nama_ayah',
             'tbl_datasiswa.nama_ibu',
-            'tbl_datasiswa.pekerjaan_wali',
             'tbl_datasiswa.foto'
         )->join(
             'tbl_datasiswa',
@@ -78,18 +86,16 @@ class SiswaController extends Controller
     {
 
         $siswa = User::find($id);
-        $siswa->password = bcrypt($request->password);
-        $siswa->save();
-
 
         if ($request->has('foto')) {
             $request->file('foto')->move('foto_akunsiswa/', $request->file('foto')->getClientOriginalName());
             $siswa->foto = $request->file('foto')->getClientOriginalName();
             $siswa->save();
         }
+
         // dd($siswa);
 
-        Alert::success('Sukses', 'Akun Berhasil Di Update!');
+        Alert::success('Sukses', 'Foto Berhasil Di Ubah!');
         return redirect('/siswa/profile');
     }
 

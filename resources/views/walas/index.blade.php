@@ -20,59 +20,41 @@
         </div><!-- /.page-header -->
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-md-4">
+                        <div class="infobox infobox-orange">
+                            <div class="infobox-icon">
+                                <i class="ace-icon fa fa-bell"></i>
+                            </div>                        
+                            <div class="infobox-data">
+                                <a href="#">
+                                    <span class="infobox-data-number">{{$proses}}</span>
+                                    <div class="infobox-content">Sedang Proses</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-4">
+                        <div class="infobox infobox-red">
+                            <div class="infobox-icon">
+                                <i class="ace-icon fa fa-close"></i>
+                            </div>                        
+                            <div class="infobox-data">
+                                <a href="#">
+                                <span class="infobox-data-number">{{$tolak}}</span>
+                                <div class="infobox-content">Di Tolak</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                      <div class="col-md-4">
                         <div class="infobox infobox-green">
                             <div class="infobox-icon">
                                 <i class="ace-icon fa fa-check"></i>
                             </div>                        
                             <div class="infobox-data">
                                 <a href="#">
-                                <span class="infobox-data-number">{{ $permintaan_bansos}}</span>
-                                <div class="infobox-content">Permintaan Bansos</div>
-                            </a>
-                        </div>
-                    </div>
-                        <div class="infobox infobox-blue">
-                            <div class="infobox-icon">
-                                <i class="ace-icon fa fa-users"></i>
-                            </div>                        
-                            <div class="infobox-data">
-                                <a href="#">
-                                <span class="infobox-data-number">{{$akun_walas}}</span>
-                                <div class="infobox-content">Akun WaliKelas</div>
-                            </a>
-                        </div>
-                    </div>
-                        <div class="infobox infobox-brown">
-                            <div class="infobox-icon">
-                                <i class="ace-icon fa fa-graduation-cap"></i>
-                            </div>                        
-                            <div class="infobox-data">
-                                <a href="#">
-                                <span class="infobox-data-number">{{$data_siswa}}</span>
-                                <div class="infobox-content">Data Siswa</div>
-                            </a>
-                        </div>
-                    </div>
-                        <div class="infobox infobox-black">
-                            <div class="infobox-icon">
-                                <i class="ace-icon fa fa-user"></i>
-                            </div>                        
-                            <div class="infobox-data">
-                                <a href="#">
-                                <span class="infobox-data-number">{{$akun_siswa}}</span>
-                                <div class="infobox-content">Akun Siswa</div>
-                            </a>
-                        </div>
-                    </div>
-                        <div class="infobox infobox-red">
-                            <div class="infobox-icon">
-                                <i class="ace-icon fa fa-hashtag"></i>
-                            </div>                        
-                            <div class="infobox-data">
-                                <a href="#">
-                                <span class="infobox-data-number">{{$akun_admin}}</span>
-                                <div class="infobox-content">Akun Admin</div>
+                                <span class="infobox-data-number">{{$selesai}}</span>
+                                <div class="infobox-content">Selesai</div>
                             </a>
                         </div>
                     </div>

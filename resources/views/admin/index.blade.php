@@ -21,25 +21,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="infobox infobox-green">
+                        <div class="infobox infobox-blue">
                             <div class="infobox-icon">
                                 <i class="ace-icon fa fa-database"></i>
                             </div>                        
                             <div class="infobox-data">
                                 <a href="#">
-                                <span class="infobox-data-number">5</span>
-                                <div class="infobox-content">Data Kriteria</div>
+                                <span class="infobox-data-number">{{$datatraining}}</span>
+                                <div class="infobox-content">Data Training</div>
                             </a>
                         </div>
                     </div>
-                        <div class="infobox infobox-blue">
+                        <div class="infobox infobox-purple">
                             <div class="infobox-icon">
                                 <i class="ace-icon fa fa-book"></i>
                             </div>                        
                             <div class="infobox-data">
                                 <a href="#">
-                                <span class="infobox-data-number">32</span>
-                                <div class="infobox-content">Data Training</div>
+                                <span class="infobox-data-number">{{$dataset}}</span>
+                                <div class="infobox-content">Permintaan Bansos</div>
                             </a>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                             </div>                        
                             <div class="infobox-data">
                                 <a href="#">
-                                <span class="infobox-data-number">432</span>
+                                <span class="infobox-data-number">{{$datasiswa}}</span>
                                 <div class="infobox-content">Data Siswa</div>
                             </a>
                         </div>
@@ -60,8 +60,19 @@
                             </div>                        
                             <div class="infobox-data">
                                 <a href="#">
-                                <span class="infobox-data-number">341</span>
+                                <span class="infobox-data-number">{{$akunsiswa}}</span>
                                 <div class="infobox-content">Akun Siswa</div>
+                            </a>
+                        </div>
+                    </div>
+                        <div class="infobox infobox-orange">
+                            <div class="infobox-icon">
+                                <i class="ace-icon fa fa-graduation-cap"></i>
+                            </div>                        
+                            <div class="infobox-data">
+                                <a href="#">
+                                <span class="infobox-data-number">{{$akunwalas}}</span>
+                                <div class="infobox-content">Akun Walikelas</div>
                             </a>
                         </div>
                     </div>
@@ -71,7 +82,7 @@
                             </div>                        
                             <div class="infobox-data">
                                 <a href="#">
-                                <span class="infobox-data-number">3</span>
+                                <span class="infobox-data-number">{{$akunadmin}}</span>
                                 <div class="infobox-content">Akun Admin</div>
                             </a>
                         </div>
@@ -107,6 +118,13 @@
 // Create the chart
 Highcharts.chart('highcharts_dashboardadmin', {
     chart: {
+        backgroundColor: {
+            linearGradient: [0, 0, 500, 500],
+            stops: [
+                [0, 'rgb(255, 255, 255)'],
+                [1, 'rgb(200, 200, 255)']
+            ]
+        },        
         type: 'column'
     },
     title: {

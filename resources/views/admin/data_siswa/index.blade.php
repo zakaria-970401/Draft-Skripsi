@@ -39,6 +39,7 @@
                 <div class="col-xs-12">
                     <button type="button" data-target="#modal-daftar" data-toggle="modal" class="btn btn-info"><i class="fa fa-plus"> Tambah Data Siswa</button></i>
                     <a href="#modal-excel" data-toggle="modal" class="btn btn-success"><i class="fa fa-file-excel-o"> Import Excel Data Siswa</a></i>
+                    <a href="/admin/export_datasiswa" class="btn btn-warning"><i class="fa fa-cloud-download"> Download Excel Data Siswa</a></i>
                     <div class="space-6"></div>
                     <table id="myTable" class="display">
                         <thead>
@@ -58,7 +59,13 @@
                                 <td class="text-center">{{ $loop->iteration}}</td>
                                 <td class="text-center">{{$sw->nama_siswa}}</td>
                                  <td class="text-center">{{$sw->nisn}}</td>
-                                <td class="text-center">{{$sw->jurusan}}</td>
+                                <td class="text-center">
+                                @if($sw->id_jurusan == '1')
+                                    TKJ
+                                @else
+                                    TKR
+                                @endif
+                                </td>
                                 <td class="text-center">
                                     @if($sw->id_kelas == 'K01')
                                     X-TKJ-A
@@ -228,12 +235,6 @@
 										<div class="col-sm-9">
                                         <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nama_ibu" required value="{{old('nama_ibu')}}"/>
 										</div>
-                                    </div>
-                                    <div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Pekerjaan Wali : </label>
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="pekerjaan_wali" required value="{{old('pekerjaan_wali')}}" />
-                                        </div>
                                     </div>
                                     <div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto : </label>

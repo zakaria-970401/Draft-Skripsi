@@ -27,7 +27,11 @@ class WalasController extends Controller
 
         $data_siswa = DataSiswaModel::all()->count();
 
-        $permintaan_bansos = DataSetModel::where('kelas', Auth::user()->walikelas)->count();
+        $proses = DataSetModel::where('kelas', Auth::user()->walikelas)->where('status', 2)->count();
+
+        $tolak = DataSetModel::where('kelas', Auth::user()->walikelas)->where('status', 4)->count();
+
+        $selesai = DataSetModel::where('kelas', Auth::user()->walikelas)->where('status', 3)->count();
 
         $akun_siswa = User::all()->count();
 
@@ -35,7 +39,10 @@ class WalasController extends Controller
 
         $akun_walas = Teacher::all()->count();
 
-        return view('walas.index', compact('data_training', 'data_siswa', 'permintaan_bansos', 'akun_siswa', 'akun_admin', 'akun_walas'));
+        $notif = DataSetModel::where('kelas', Auth::user()->walikelas)->where('status', 1)->count();
+
+
+        return view('walas.index', compact('data_training', 'data_siswa', 'proses', 'akun_siswa', 'akun_admin', 'akun_walas', 'notif', 'tolak', 'selesai', 'proses'));
     }
 
     public function verifikasi_databansos()

@@ -13,13 +13,15 @@ class DataSiswaImport implements ToCollection
      */
     public function collection(Collection $collection)
     {
+        // dd($collection->all());
+
         foreach ($collection as $key =>  $row) {
             if ($key >= 2) {
                 $tgl_lahir = ($row[8] - 25569) * 86400;
                 DataSiswaModel::Create([
                     'nama_siswa' => $row[1],
                     'nisn' => $row[2],
-                    'jurusan' => $row[3],
+                    'id_jurusan' => $row[3],
                     'id_kelas' => $row[4],
                     'id_agama' => $row[5],
                     'jenis_kelamin' => $row[6],
@@ -29,10 +31,8 @@ class DataSiswaImport implements ToCollection
                     'no_hp' => $row[10],
                     'nama_ayah' => $row[11],
                     'nama_ibu' => $row[12],
-                    'pekerjaan_wali' => $row[13],
                 ]);
             }
-            // dd($collection->all());
         }
     }
 }

@@ -147,12 +147,6 @@
                                 <span>{{$join_siswa->nama_ibu}}</span>
                             </div>
                         </div>
-                        <div class="profile-info-row">
-                            <div class="profile-info-name"> Pekerjaan Wali murid </div>
-                            <div class="profile-info-value">
-                                <span>{{$join_siswa->pekerjaan_wali}}</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div><!-- /.user-profile -->
@@ -258,12 +252,6 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Pekerjaan Wali : </label>
-                                    <div class="col-sm-9">
-                                        <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="pekerjaan_wali" value="{{$join_siswa->pekerjaan_wali}}" disabled />
-                                    </div>
-                                </div>
-                                <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Siswa : </label>
                                     <div class="col-sm-9">
                                     <img src="{{asset('fotosiswa/'.$join_siswa->foto)}}" alt="Belum Ada Foto" readonly style="width:100px"/>
@@ -290,18 +278,6 @@
                             <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Profile : </label>
                             <div class="col-sm-9">
                                 <input type="file" id="input-username" placeholder="Silahkan di isi" class="form-control" name="foto" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Password : </label>
-                            <div class="col-sm-9">
-                                <input type="text" id="input-password" placeholder="Silahkan di isi" class="form-control" name="password"  value="{{Auth::user()->password}}" disabled />
-                            </div>
-                        </div>
-                        <div class="form-group" id="input-confirm-password">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Confirm Password : </label>
-                            <div class="col-sm-9">
-                                <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="konfirmasi_password" />
                             </div>
                         </div>
                     <button type="button" id="btn_edit_akunsiswa" class="btn btn-info btn-md"><i class="fa fa-pencil"> Edit Akun</button></i>
