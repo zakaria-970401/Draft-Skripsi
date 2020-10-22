@@ -11,7 +11,7 @@
         </li>
         <li>
             <i class="ace-icon fa fa-bar-chart home-icon"></i>
-            <a href="#">Data Penerimaan Bansos</a>
+            <a href="#">Data Penerimaan Bansos Siswa</a>
         </li>
     </ul><!-- /.breadcrumb -->
 </div>
@@ -25,6 +25,7 @@
                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Cari Berdasarkan Tahun : </label>
             <div class="col-sm-9">
                 <select class="form-control" name="tahun" style="width: 100%;">
+                <option value="{{$request_tahun}}">{{$request_tahun}}</option>
                 <option>Silahkan Pilih</option>
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
@@ -96,7 +97,7 @@ Highcharts.chart('container', {
     },
     yAxis: {
         title: {
-            text: 'Grafik Data Bansos Siswa Dapat Dan Tidak Dapat'
+            text: 'Grafik Data Bansos Siswa Dapat Dan Tidak Dapat Tahun {{$request_tahun}}'
         }
     },
     tooltip: {
@@ -115,71 +116,126 @@ Highcharts.chart('container', {
     },
     series: [{
         name: 'DAPAT',
-        data: [{{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}   ]
-
-    }, {
+        data: [
+            {{$x_tkja_dpt}}, 
+            {{$x_tkjb_dpt}},    
+            {{$x_tkjc_dpt}}, 
+            {{$x_tkjd_dpt}},    
+            {{$xi_tkja_dpt}}, 
+            {{$xi_tkjb_dpt}},    
+            {{$xi_tkjc_dpt}},    
+            {{$xii_tkja_dpt}},    
+            {{$xii_tkjb_dpt}},    
+            {{$xii_tkjc_dpt}},    
+            {{$x_tkra_dpt}},    
+            {{$x_tkrb_dpt}},    
+            {{$x_tkrc_dpt}},    
+            {{$xi_tkra_dpt}},    
+            {{$xi_tkrb_dpt}},    
+            {{$xi_tkrc_dpt}},    
+            {{$xii_tkra_dpt}},    
+            {{$xii_tkrb_dpt}},    
+            {{$xii_tkrc_dpt}}
+               ]
+    },
+     {
         name: 'TIDAK DAPAT',
-        data: [{{$x_tkja_tdkdpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}, {{$x_tkja_dpt}}  ]
-
+        data: [ 
+            {{$x_tkja_tdkdpt}}, 
+            {{$x_tkjb_tdkdpt}},    
+            {{$x_tkjc_tdkdpt}}, 
+            {{$x_tkjd_tdkdpt}},    
+            {{$xi_tkja_tdkdpt}}, 
+            {{$xi_tkjb_tdkdpt}},    
+            {{$xi_tkjc_tdkdpt}},    
+            {{$xii_tkja_tdkdpt}},    
+            {{$xii_tkjb_tdkdpt}},    
+            {{$xii_tkjc_tdkdpt}},    
+            {{$x_tkra_tdkdpt}},    
+            {{$x_tkrb_tdkdpt}},    
+            {{$x_tkrc_tdkdpt}},    
+            {{$xi_tkra_tdkdpt}},    
+            {{$xi_tkrb_tdkdpt}},    
+            {{$xi_tkrc_tdkdpt}},    
+            {{$xii_tkra_tdkdpt}},    
+            {{$xii_tkrb_tdkdpt}},    
+            {{$xii_tkrc_tdkdpt}}
+             ]
     }]
 });
 
-
-Highcharts.chart('grafik-tahunan', {
-    chart: {
-        backgroundColor: {
-            linearGradient: [0, 0, 500, 500],
-            stops: [
-                [0, 'rgb(255, 255, 255)'],
-                [1, 'rgb(200, 200, 255)']
-            ]
-        },
-        type: 'area'
-    },
-    title: {
-        text: 'Grafik Penerimaan Tahunan Bansos'
-    },
-    xAxis: {
-        categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
-        tickmarkPlacement: 'on',
-        title: {
-            enabled: false
-        }
-    },
-    yAxis: {
-        title: {
-            text: 'Grafik Penerimaan Tahunan Bansos'
-        },
-        labels: {
-            formatter: function () {
-                return this.value / 100;
-            }
-        }
-    },
-    tooltip: {
-        split: true,
-        valueSuffix: ' Siswa'
-    },
-    plotOptions: {
-        area: {
-            stacking: 'normal',
-            lineColor: '#666666',
-            lineWidth: 1,
-            marker: {
-                lineWidth: 1,
-                lineColor: '#666666'
-            }
-        }
-    },
-    series: [{
-        name: 'Dapat',
-        data: [{{$x_tkja_dpt_2020}}, {{$x_tkja_dpt_2021}}, 21, 22, 50, 50]
-    }, {
-        name: 'Tidak Dapat',
-        data: [{{$x_tkja_tdkdpt_2020}}, {{$x_tkja_tdkdpt_2021}}, 70, 20, 10, 50]
-    }]
-});
-
-</script>
     
-@endsection
+Highcharts.chart('grafik-tahunan', {
+
+title: {
+    text: 'GRAFIK PENERIMAAN BANSOS SISWA'
+},
+
+yAxis: {
+    title: {
+        text: 'GRAFIK PENERIMAAN BANSOS SISWA'
+    }
+},
+
+xAxis: {
+    accessibility: {
+        rangeDescription: 'Range: 2020 to 2025'
+    }
+},
+
+legend: {
+    layout: 'vertical',
+    align: 'right',
+    verticalAlign: 'middle'
+},
+
+plotOptions: {
+    series: {
+        label: {
+            connectorAllowed: false
+        },
+        pointStart: 2020
+    }
+},
+
+series: [{
+    name: 'DAPAT BANSOS',
+    data: [
+        {{$siswa_dpt_2020}},
+        {{$siswa_dpt_2021}},
+        {{$siswa_dpt_2022}},
+        {{$siswa_dpt_2023}},
+        {{$siswa_dpt_2024}},
+        {{$siswa_dpt_2025}}
+          ]
+}, {
+    name: 'TIDAK DAPAT BANSOS',
+    data: [
+        {{$siswa_tdkdpt_2020}},
+        {{$siswa_tdkdpt_2021}},
+        {{$siswa_tdkdpt_2022}},
+        {{$siswa_tdkdpt_2023}},
+        {{$siswa_tdkdpt_2024}},
+        {{$siswa_tdkdpt_2025}}
+         ]
+}],
+
+responsive: {
+    rules: [{
+        condition: {
+            maxWidth: 500
+        },
+        chartOptions: {
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom'
+            }
+        }
+    }]
+}
+
+});
+    </script>
+        
+    @endsection

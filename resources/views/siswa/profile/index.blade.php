@@ -162,9 +162,6 @@
             <h3 class="header smaller lighter blue">Informasi Pribadi Siswa</h3>
         <div class="modal-body">
                     <!-- PAGE CONTENT BEGINS -->
-                    <form action="/siswa/update_profilesiswa/{{Auth::user()->id}}" class="form-horizontal" method="POST" enctype="multipart/form-data">
-                        @method('PATCH')
-                        {{ csrf_field() }}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -259,42 +256,65 @@
                                 </div>
                             </div>
                         </div>
-                        <hr style="background-color: black">
-                        <h3 class="header smaller lighter blue">Edit Akun Siswa</h3>
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> E-Mail/Username : </label>
-                            <div class="col-sm-9">
-                                <input type="text" id="input-username" placeholder="Silahkan di isi" class="form-control" name="email" value="{{Auth::user()->email}}" disabled  />
-                            </div>
-                        </div>
-                        <div class="form-group" id="foto-profile-before">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Profile : </label>
-                            <div class="col-sm-9">
-                                <img src="{{asset('foto_akunsiswa/'.Auth::user()->foto)}}" alt="Belum Ada Foto" readonly style="width:150px"/>
                                 
+                        <hr style="background-color: black">
+                          <h3 class="header smaller lighter blue">Edit Akun Siswa</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> E-Mail : </label>
+                                            <div class="col-sm-9">
+                                                <input type="text" id="input-username" placeholder="Silahkan di isi" class="form-control" name="email" value="{{Auth::user()->email}}" disabled  />
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="form-group" id="foto-profile-before">
+                                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Profile : </label>
+                                            <div class="col-sm-9">
+                                                <img src="{{asset('foto_akunsiswa/'.Auth::user()->foto)}}" alt="Belum Ada Foto" readonly style="width:150px"/>
+                                                
+                                            </div>
+                                        </div>
+                                        <form action="/siswa/update_profilesiswa/{{Auth::user()->id}}" class="form-horizontal" method="POST" enctype="multipart/form-data">
+                                            @method('PATCH')
+                                            {{ csrf_field() }}
+                                        <div class="form-group" id="foto-profile">
+                                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Profile : </label>
+                                            <div class="col-sm-9">
+                                                <input type="file" id="input-username" placeholder="Silahkan di isi" class="form-control" name="foto" />
+                                            </div>
+                                        </div>
+                                    <button type="button" id="btn_edit_akunsiswa" class="btn btn-info btn-md"><i class="fa fa-pencil"> Edit Akun</button></i>
+                                    <button type="button" id="btn_batal_edit_akunsiswa" class="btn btn-danger btn-md"><i class="fa fa-close"> Batal</button></i>
+                                    <button type="submit" id="btn_simpan" class="btn btn-success btn-md"><i class="fa fa-save"> Update Foto!</button></i>
+                                     </form>
+                                    </div>
+                                    <form action="/siswa/update_passwordsiswa/{{Auth::user()->id}}" class="form-horizontal" method="POST" enctype="multipart/form-data">
+                                        @method('PATCH')
+                                        {{ csrf_field() }}
+                                    <div class="col-md-6" id="form_password">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Password Baru : </label>
+                                            <div class="col-sm-9">
+                                                <input type="text" id="input-username" placeholder="Silahkan di isi" class="form-control" name="password" />
+                                                <span class="text-danger"> *Maks. 6 Digit</span>
+                                            </div>
+                                        </div>
+                                    <center><button type="submit" id="btn_simpan" class="btn btn-success btn-md"><i class="fa fa-save"> Update Password!</button></i>
+                                    </form>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                             </div>
                         </div>
-                        <div class="form-group" id="foto-profile">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Profile : </label>
-                            <div class="col-sm-9">
-                                <input type="file" id="input-username" placeholder="Silahkan di isi" class="form-control" name="foto" />
-                            </div>
-                        </div>
-                    <button type="button" id="btn_edit_akunsiswa" class="btn btn-info btn-md"><i class="fa fa-pencil"> Edit Akun</button></i>
-                    </div>
-                 </div>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                <button type="submit" class="btn btn-success"><i class="fa fa-save"> Simpan</button></i>
-            </div>
-        </div>
-    </form>
-</div>
-</div>
-</div><!-- /.page-content -->
-</div>
-</div><!-- /.main-content -->
+        </div><!-- /.page-content -->
+     </div>
+ </div><!-- /.main-content -->
 
-      
-@endsection
+                    
+                @endsection

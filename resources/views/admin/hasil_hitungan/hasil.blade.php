@@ -11,7 +11,7 @@
         </li>
         <li>
             <i class="ace-icon fa fa-gavel home-icon"></i>
-            <a href="/">Hasil Keputusan</a>
+            <a href="#">Hasil Keputusan</a>
         </li>
     </ul><!-- /.breadcrumb -->
 </div>

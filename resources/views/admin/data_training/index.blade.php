@@ -1,6 +1,6 @@
 @extends('layout/masteradmin')
 
-@section('judul', 'Halaman Program Bansos')
+@section('judul', 'Halaman Data Training')
 
 @section('konten')
 

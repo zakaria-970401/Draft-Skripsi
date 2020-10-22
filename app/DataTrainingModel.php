@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class DataTrainingModel extends Model
 {
-    protected $table = 'tbl_training';
+    protected $table = 'tbl_datatraining';
 
     public $timestamps = false;
 

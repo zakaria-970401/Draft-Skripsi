@@ -15,7 +15,7 @@
                         <a href="/admin/data_training">Data Training</a>
                     </li>
                     <li>
-                        <i class="ace-icon fa fa-database home-icon"></i>
+                        <i class="ace-icon fa fa-pencil home-icon"></i>
                         <a href="#">Edit Data Training</a>
                     </li>
                 </ul><!-- /.breadcrumb -->

@@ -131,17 +131,11 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Password : </label>
                         <div class="col-sm-9">
-                            <input type="text" id="input-password" placeholder="Silahkan di isi" class="form-control" name="password"  value="{{$siswa->password}}" />
-                        </div>
-                    </div>
-                    <div class="form-group" id="input-confirm-password-akunsiswa">
-                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Confirm Password : </label>
-                        <div class="col-sm-9">
-                            <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="password" required value="{{$siswa->password}}" />
+                            <input type="text" id="input-password" placeholder="Silahkan di isi" class="form-control" name="password" />
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>

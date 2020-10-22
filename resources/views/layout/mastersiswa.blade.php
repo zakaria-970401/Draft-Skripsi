@@ -67,7 +67,7 @@
 				</button>
 
 				<div class="navbar-header pull-left">
-					<a href="/" class="navbar-brand">
+					<a href="#" class="navbar-brand">
 						<img src="/assets/images/avatars/logo.png" style="width: 150px" alt="">
 					</a>
 				</div>
@@ -93,7 +93,7 @@
 
 								<li class="divider"></li>
 								<li>
-									<a href="#modal-logout" data-toggle="modal">
+									<a href="/logout">
 										<i class="ace-icon fa fa-power-off">
 										Logout</i>
 										</a>
@@ -206,7 +206,7 @@
 			</div>
 
 			<div class="modal fade" id="modal-logout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
+				<div class="modal-dialog modal-sm">
 				<div class="modal-content">
 					<div class="modal-header">
 							<h3>
@@ -268,6 +268,10 @@
 
                 //Plugin Table
                 $('#myTable').DataTable();
+				
+				$('#form_password').hide();
+				$('#btn_batal_edit_akunsiswa').hide();
+				$('#btn_simpan').hide();
 
                 //Hide Form Status Yatim
                 $('#status_yatim').hide()
@@ -277,10 +281,22 @@
 
 				//SHOW HIDE CONFIRM PASSWORD
 			$('#btn_edit_akunsiswa').click(function(){
-				$("#input-password").prop("disabled", false);
 				$("#foto-profile-before").hide();
 				$("#foto-profile").show();
-				$("#input-confirm-password").show();
+				$("#form_password").show();
+				$("#btn_simpan").show();
+				$("#btn_batal_edit_akunsiswa").show();
+				$("#btn_edit_akunsiswa").hide();
+			});
+	
+				//SHOW HIDE CONFIRM PASSWORD
+			$('#btn_batal_edit_akunsiswa').click(function(){
+				$("#foto-profile-before").show();
+				$("#foto-profile").hide();
+				$("#form_password").hide();
+				$("#btn_simpan").hide();
+				$("#btn_batal_edit_akunsiswa").hide();
+				$("#btn_edit_akunsiswa").show();
 			});
                 //Show hide Form Status Kelengkapan Orangtua
                 $('#status_kelengkapan_ortu').on('change',function()

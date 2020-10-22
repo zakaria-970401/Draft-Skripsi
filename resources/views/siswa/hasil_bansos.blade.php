@@ -1,6 +1,6 @@
 @extends('layout/mastersiswa')
 
-@section('judul', 'Halaman Data Siswa')
+@section('judul', 'Halaman Hasil Data Bansos')
 
 @section('konten')
 <div class="breadcrumbs ace-save-state" id="breadcrumbs">
@@ -27,6 +27,7 @@
                             <th class="text-center">NISN</th>
                             <th class="text-center">Jurusan</th>
                             <th class="text-center">Kelas</th>
+                            <th class="text-center">Foto</th>
                             <th class="text-center">Status</th>
                         </tr>
                     </thead>
@@ -36,8 +37,17 @@
                             <td class="text-center">{{$loop->iteration}}</td>
                             <td class="text-center">{{$data->nama_siswa}}</td>
                             <td class="text-center">{{$data->nisn}}</td>
-                            <td class="text-center">{{$data->jurusan}}</td>
+                            <td class="text-center">
+                                @if($data->id_jurusan == 1)
+                                    TKJ
+                                 @else
+                                    TKR
+                                @endif
+                            </td>
                             <td class="text-center">{{$data->kelas}}</td>
+                            <td class="text-center">
+                                <center><img class="img-responsive" src="{{asset('fotosiswa/'.$data->foto)}}" style="width: 78px" alt="" />
+                            </td>
                                 <td class="text-center">
                                     <span class="label label-sm label-success">Dapat Bantuan</span>
                                 </td>

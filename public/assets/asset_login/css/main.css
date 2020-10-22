@@ -47,9 +47,11 @@ body{
 
 .header div{
 	float: left;
-	color: #fff;
+	color: rgb(252, 252, 252);
+	background-color:transparent;
 	font-family: 'Exo', sans-serif;
 	font-size: 35px;
+	position: static;
 	font-weight: 200;
 }
 
@@ -70,10 +72,10 @@ body{
 .login input[type=text]{
 	width: 250px;
 	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
+	background: #ffffff;
+	border: 2px solid rgba(255,255,255,0.6);
 	border-radius: 2px;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -83,10 +85,10 @@ body{
 .login input[type=password]{
 	width: 250px;
 	height: 30px;
-	background: transparent;
+	background: #ffffff;
 	border: 1px solid rgba(255,255,255,0.6);
 	border-radius: 2px;
-	color: #fff;
+	color: #000000;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -97,11 +99,11 @@ body{
 .login input[type=button]{
 	width: 260px;
 	height: 35px;
-	background: #fff;
+	background: #06a6c2;
 	border: 1px solid #fff;
-	cursor: pointer;
+	cursor: auto;
 	border-radius: 2px;
-	color: #a18d6c;
+	color: #ffffff;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -114,11 +116,11 @@ body{
 }
 
 .login input[type=button]:active{
-	opacity: 0.6;
+	opacity: 0.2;
 }
 
 .login input[type=text]:focus{
-	opacity: 0.5;
+	opacity: 0.8;
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
 }

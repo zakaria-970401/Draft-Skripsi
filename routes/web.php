@@ -149,6 +149,7 @@ Route::get('/siswa/hasil_bansos', 'SiswaController@hasil_bansos');
 /// MODULE PROFILE SISWA ///
 Route::get('/siswa/profile', 'SiswaController@profile');
 Route::patch('/siswa/update_profilesiswa/{id}', 'SiswaController@update_profilesiswa');
+Route::patch('/siswa/update_passwordsiswa/{id}', 'SiswaController@update_passwordsiswa');
 Route::get('/siswa/profile', 'SiswaController@profile');
 
 
@@ -170,7 +171,7 @@ Route::get('/walas/get_hasil_dataverifikasi', 'WalasController@get_hasil_dataver
 Route::get('/walas/show_hitung_hasil_datatraining/{id}', 'WalasController@show_hitung_hasil_datatraining');
 //MODULE PROFILE WALI KELAS //
 Route::get('/walas/profile/{id}', 'WalasController@get_profilewalas');
-Route::patch('/walas/update_akunwalas/{id}', 'WalasController@post_edit_akunwalas');
+Route::patch('/walas/update_pw_akunwalas/{id}', 'WalasController@post_edit_akunwalas');
 
 
 // MODULE PEERHITUNGAN NAIVE BAIYES //

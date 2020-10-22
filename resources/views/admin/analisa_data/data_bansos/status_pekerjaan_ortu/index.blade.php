@@ -11,7 +11,7 @@
         </li>
         <li>
             <i class="ace-icon fa fa-bar-chart home-icon"></i>
-            <a href="#">Data Status Pekerjaan Orang Tua/    Wali</a>
+            <a href="#">Data Status Pekerjaan Orang Tua/Wali</a>
         </li>
     </ul><!-- /.breadcrumb -->
 </div>
@@ -62,7 +62,7 @@ Highcharts.chart('container', {
         type: 'column'
     },
     title: {
-        text: 'Grafik Status Pekerjaan Orang Tua/Wali Siswa'
+        text: 'GRAFIK STATUS PEKERJAAN ORANG TUA/WALI SISWA'
     },
     xAxis: {
         categories: [
@@ -91,7 +91,7 @@ Highcharts.chart('container', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Grafik Status Pekerjaan Orang Tua/Wali Siswa'
+            text: 'GRAFIK STATUS PEKERJAAN ORANG TUA/WALI SISWA'
         }
     },
     tooltip: {
@@ -128,68 +128,98 @@ Highcharts.chart('container', {
 });
           
 
-
 Highcharts.chart('grafik-tahunan', {
-    chart: {
-        backgroundColor: {
-            linearGradient: [0, 0, 500, 500],
-            stops: [
-                [0, 'rgb(255, 255, 255)'],
-                [1, 'rgb(200, 200, 255)']
-            ]
-        },
-        type: 'area'
-    },
-    title: {
-        text: 'Grafik Penerimaan Tahunan Bansos'
-    },
-    xAxis: {
-        categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
-        tickmarkPlacement: 'on',
-        title: {
-            enabled: false
-        }
-    },
-    yAxis: {
-        title: {
-            text: 'Grafik Penerimaan Tahunan Bansos'
-        },
-        labels: {
-            formatter: function () {
-                return this.value / 1000;
-            }
-        }
-    },
-    tooltip: {
-        split: true,
-        valueSuffix: ' Siswa'
-    },
-    plotOptions: {
-        area: {
-            stacking: 'normal',
-            lineColor: '#666666',
-            lineWidth: 1,
-            marker: {
-                lineWidth: 1,
-                lineColor: '#666666'
-            }
-        }
-    },
-    series: [{
-        name: 'Karyawan Swasta',
-        data: [{{$karyawanswasta_xtkja_2020}}, {{$karyawanswasta_xtkja_2021}}, 21, 22, 50, 50]
-    }, {
-        name: 'Pegawai Negeri',
-        data: [23, 54, 21, 22, 50, 50]
-    },{
-        name: 'Pekerja TIdak Tetap',
-        data: [13, 17, 21, 22, 50, 50]
-    },{
-        name: 'Usaha',
-        data: [13, 17, 21, 22, 50, 50]
-    }]
-});
 
-</script>
-    
-@endsection
+title: {
+    text: 'GRAFIK TAHUNAN STATUS PEKERJAAN ORANG TUA/WALI SISWA'
+},
+
+
+yAxis: {
+    title: {
+        text: 'GRAFIK TAHUNAN STATUS PEKERJAAN ORANG TUA/WALI SISWA'
+    }
+},
+
+xAxis: {
+    accessibility: {
+        rangeDescription: 'Range: 2020 to 2025'
+    }
+},
+
+legend: {
+    layout: 'vertical',
+    align: 'right',
+    verticalAlign: 'middle'
+},
+
+plotOptions: {
+    series: {
+        label: {
+            connectorAllowed: false
+        },
+        pointStart: 2020
+    }
+},
+
+series: [{
+    name: 'KARYAWAN SWASTA',
+    data: [
+            {{$karyawanswasta_siswa_2020}}, 
+            {{$karyawanswasta_siswa_2021}}, 
+            {{$karyawanswasta_siswa_2022}}, 
+            {{$karyawanswasta_siswa_2023}}, 
+            {{$karyawanswasta_siswa_2024}}, 
+            {{$karyawanswasta_siswa_2025}} 
+            ]
+}, {
+    name: 'PEGAWAI NEGERI',
+    data: [
+            {{$pegawainegeri_siswa_2020}}, 
+            {{$pegawainegeri_siswa_2021}}, 
+            {{$pegawainegeri_siswa_2022}}, 
+            {{$pegawainegeri_siswa_2023}}, 
+            {{$pegawainegeri_siswa_2024}}, 
+            {{$pegawainegeri_siswa_2025}}
+    ]
+}, {
+    name: 'PEKERJA TIDAK TETAP',
+    data: [
+            {{$pekerja_tdk_tetap_siswa_2020}}, 
+            {{$pekerja_tdk_tetap_siswa_2021}}, 
+            {{$pekerja_tdk_tetap_siswa_2022}}, 
+            {{$pekerja_tdk_tetap_siswa_2023}}, 
+            {{$pekerja_tdk_tetap_siswa_2024}}, 
+            {{$pekerja_tdk_tetap_siswa_2025}}
+    ]
+}, {
+    name: 'USAHA',
+    data: [
+            {{$usaha_siswa_2020}}, 
+            {{$usaha_siswa_2021}}, 
+            {{$usaha_siswa_2022}}, 
+            {{$usaha_siswa_2023}}, 
+            {{$usaha_siswa_2024}}, 
+            {{$usaha_siswa_2025}}
+    ]
+}],
+
+responsive: {
+    rules: [{
+        condition: {
+            maxWidth: 500
+        },
+        chartOptions: {
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom'
+            }
+        }
+    }]
+}
+
+});
+    </script>
+        
+    @endsection

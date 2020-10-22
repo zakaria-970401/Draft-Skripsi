@@ -1,6 +1,6 @@
 @extends('layout/mastersiswa')
 
-@section('judul' , 'Halaman Profile')
+@section('judul' , 'Halaman Detail Kelas')
 
 @section('konten')
 

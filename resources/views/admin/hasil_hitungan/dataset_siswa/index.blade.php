@@ -4,7 +4,7 @@
 @section('konten')
 <div class="col-xs-12">
     <h3 class="header smaller lighter blue">Perhitungan Algoritma Naive Baiyes</h3>
-    <a href="/admin/data_training" class="btn btn-danger btn-xl"><i class="fa fa-reply"> Kembali</a></i>
+      <a href="/admin/data_training" class="btn btn-danger btn-xl"><i class="fa fa-reply"> Kembali</a></i>
 
     <a href="#modal-hitung" data-toggle="modal" class="btn btn-info btn-xl"><i class="fa fa-calculator"> Hitung Naive Baiyes</a></i>
     

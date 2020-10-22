@@ -1,13 +1,13 @@
 @extends('layout/mastersiswa')
 
-@section('judul', 'Halaman Data Siswa')
+@section('judul', 'Halaman Data Kelas')
 
 @section('konten')
 <div class="breadcrumbs ace-save-state" id="breadcrumbs">
     <ul class="breadcrumb">
         <li>
             <i class="ace-icon fa fa-home home-icon"></i>
-            <a href="#">Home</a>
+            <a href="/siswa">Home</a>
         </li>
         <li>
             <i class="ace-icon fa fa-university home-icon"></i>

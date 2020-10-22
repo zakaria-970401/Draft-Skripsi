@@ -104,67 +104,56 @@
         <div class="modal-header">
             <h3 class="header smaller lighter blue">Edit Akun walas</h3>
         <div class="modal-body">
-                    <!-- PAGE CONTENT BEGINS -->
-                    <form action="/walas/update_akunwalas/{{$walas->id}}" class="form-horizontal" method="POST" enctype="multipart/form-data">
-                        @method('PATCH')
-                        {{ csrf_field() }}
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="form-group">
                                 <label class="col-md-3 control-label no-padding-right" for="form-field-1-1"> Nama</label>
                                 <div class="col-sm-9">
-                                <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nama" required value="{{$walas->nama}}"/>
+                                <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nama" required value="{{$walas->nama}}" readonly/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-3 control-label no-padding-right" for="form-field-1-1"> NUPTK</label>
                                 <div class="col-sm-9">
-                                <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nuptk" required value="{{$walas->nuptk}}"/>
+                                <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nuptk" required value="{{$walas->nuptk}}" readonly/>
                                 </div>
                             </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> E-Mail : </label>
                             <div class="col-sm-9">
-                                <input type="text" id="input-username" placeholder="Silahkan di isi" class="form-control" name="email" value="{{$walas->email}}"  />
+                                <input type="text" id="input-username" placeholder="Silahkan di isi" class="form-control" name="email" value="{{$walas->email}}" readonly  />
                             </div>
                         </div>
-                        <h3 class="header smaller lighter blue">Ganti Password</h3>
+                        <h3 class="header smaller lighter blue">Foto Walikelas</h3>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Password : </label>
-                            <div class="col-sm-9">
-                                <input type="text" id="input-password" placeholder="Silahkan di isi" class="form-control" name="password"  value="{{$walas->password}}" />
-                            </div>
-                        </div>
-                        <div class="form-group" id="input-confirm-password-akunsiswa">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Confirm Password : </label>
-                            <div class="col-sm-9">
-                                <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="konfirmasi_password"/>
-                            </div>
-                        </div>
-                        <h3 class="header smaller lighter blue">Ganti Foto Profile</h3>
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Profile : </label>
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto : </label>
                             <div class="col-sm-9">
                             <img src="{{asset('foto_walas/'.$walas->foto)}}" alt="Belum Ada Foto" readonly style="width:100px"/>
                             </div>
                         </div>
-                        <div class="form-group" id="foto-profile">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Ganti Foto Profile : </label>
+                    </div>
+            
+                    <button type="button" id="btn_changepw" class="btn btn-info"><i class="fa fa-pencil"> Ganti Password</i></button>
+
+                    <form action="/walas/update_pw_akunwalas/{{$walas->id}}" class="form-horizontal" method="POST" enctype="multipart/form-data">
+                        @method('PATCH')
+                        {{ csrf_field() }}
+                    <div class="col-md-6" id="form_password">
+                        <h3 class="header smaller lighter blue">Ganti Password</h3>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Password Baru : </label>
                             <div class="col-sm-9">
-                                <input type="file" id="input-username" placeholder="Silahkan di isi" class="form-control" name="foto" />
+                                <input type="text" id="input-password" placeholder="Silahkan di isi" class="form-control" name="password" />
                             </div>
                         </div>
+                        <center><button type="submit" id="btn_changepw" class="btn btn-success btn-mdz"><i class="fa fa-save"> Simpan</i></button>
+                        <button type="button" id="batal_btn_changepw" class="btn btn-danger btn-mdz"><i class="fa fa-close"> Batal</i></button>
+                        </form>
                     </div>
                  </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                <button type="submit" class="btn btn-success"><i class="fa fa-save"> Simpan</button></i>
-            </div>
         </div>
-    </form>
-</div>
-</div>
+    </div>
 
         <!-- PAGE CONTENT ENDS -->
     </div><!-- /.col -->

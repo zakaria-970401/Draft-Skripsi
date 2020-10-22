@@ -68,13 +68,13 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-3 center">
                                         <span class="profile-picture">
-                                            <img class="editable img-responsive" alt="Alex's Avatar" id="avatar2" src=" {{ asset('foto_akunadmin/'.Auth::user()->foto)}}" style="width: 500px" alt="Belum Ada Foto" />
+                                            <img class="editable img-responsive" alt="Alex's Avatar" id="avatar2" src=" {{ asset('foto_walas/'.Auth::user()->foto)}}" style="width: 500px" alt="Belum Ada Foto" />
                                         </span>
                                         <div class="space space-4"></div>
                                         <h5 class="text-dark">{{Auth::user()->nama}}</h5>
                                     </div><!-- /.col -->                 
                                     <div class="col-xs-12 col-sm-9">
-                                    <div id="grafik-walas">
+                                    <div id="grafik-tahunan">
                                     </div>
                                     </div>
                                 </div>
@@ -86,67 +86,73 @@
                         
 <script type="text/javascript">
 
-Highcharts.chart('grafik-walas', {
-    chart: {
-        type: 'area'
-    },
-    title: {
-        text: 'Historic and Estimated Worldwide Population Growth by Region'
-    },
-    subtitle: {
-        text: 'Source: Wikipedia.org'
-    },
-    xAxis: {
-        categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
-        tickmarkPlacement: 'on',
-        title: {
-            enabled: false
-        }
-    },
-    yAxis: {
-        title: {
-            text: 'Billions'
-        },
-        labels: {
-            formatter: function () {
-                return this.value / 1000;
-            }
-        }
-    },
-    tooltip: {
-        split: true,
-        valueSuffix: ' millions'
-    },
-    plotOptions: {
-        area: {
-            stacking: 'normal',
-            lineColor: '#666666',
-            lineWidth: 1,
-            marker: {
-                lineWidth: 1,
-                lineColor: '#666666'
-            }
-        }
-    },
-    series: [{
-        name: 'Asia',
-        data: [502, 635, 809, 947, 1402, 3634, 5268]
-    }, {
-        name: 'Africa',
-        data: [106, 107, 111, 133, 221, 767, 1766]
-    }, {
-        name: 'Europe',
-        data: [163, 203, 276, 408, 547, 729, 628]
-    }, {
-        name: 'America',
-        data: [18, 31, 54, 156, 339, 818, 1201]
-    }, {
-        name: 'Oceania',
-        data: [2, 2, 2, 6, 13, 30, 46]
-    }]
-});
-        
-</script>
-                
+Highcharts.chart('grafik-tahunan', {
 
-@endsection
+title: {
+    text: 'GRAFIK PENERIMAAN BANSOS SISWA'
+},
+
+yAxis: {
+    title: {
+        text: 'GRAFIK PENERIMAAN BANSOS SISWA'
+    }
+},
+
+xAxis: {
+    accessibility: {
+        rangeDescription: 'Range: 2017 to 2020'
+    }
+},
+
+legend: {
+    layout: 'vertical',
+    align: 'right',
+    verticalAlign: 'middle'
+},
+
+plotOptions: {
+    series: {
+        label: {
+            connectorAllowed: false
+        },
+        pointStart: 2017
+    }
+},
+
+series: [{
+    name: 'SISWA YANG DAPAT',
+    data: [
+            104,
+            135,
+            97,
+            81
+          ]
+}, {
+    name: 'SISWA YANG TIDAK DAPAT',
+    data: [
+        5,
+        13,
+        8,
+        11
+         ]
+}],
+
+responsive: {
+    rules: [{
+        condition: {
+            maxWidth: 500
+        },
+        chartOptions: {
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom'
+            }
+        }
+    }]
+}
+
+});
+    </script>
+        
+    @endsection

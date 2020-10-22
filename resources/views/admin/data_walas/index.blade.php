@@ -1,6 +1,6 @@
 @extends('layout/masteradmin')
 
-@section('judul', 'Halaman Data Wali Kelas')
+@section('judul', 'Halaman Data WaliKelas')
 
 @section('konten')
 <div class="breadcrumbs ace-save-state" id="breadcrumbs">
@@ -29,6 +29,7 @@
                             <th class="text-center">Nama</th>
                             <th class="text-center">NUPTK</th>
                             <th class="text-center">Wali Kelas</th>
+                            <th class="text-center">E-mail</th>
                             <th class="text-center">Foto</th>
                             <th class="text-center">Opsi</th>
                         </tr>
@@ -40,6 +41,7 @@
                             <td class="text-center">{{$data->nama}}</td>
                             <td class="text-center">{{$data->nuptk}}</td>
                             <td class="text-center">{{$data->walikelas}}
+                            <td class="text-center">{{$data->email}}
                             </td>
                             <td class="text-center">
                                 <center><img class="img-responsive" src=" {{ asset('foto_walas/'.$data->foto)}}" style="width: 78px" alt="" />
@@ -91,7 +93,7 @@
                                     <div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Wali Kelas : </label>
 										<div class="col-sm-9">
-                                                <select class="form-control my_select" id="" name="walikelas">
+                                                <select class="form-control" id="myselect" name="walikelas">
                                                     <option>--Silahkan Pilih--</option>
                                                     @foreach ($loopkelas as $kls)
                                                     <option value="{{$kls->kelas}}">{{$kls->kelas}}</option>

@@ -1,6 +1,6 @@
 @extends('layout/masteradmin')
 
-@section('judul' , 'Halaman Edit Walas')
+@section('judul' , 'Halaman Edit Walikelas')
 
 @section('konten')
 
@@ -127,7 +127,7 @@
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
     <div class="modal-header">
-        <h3 class="header smaller lighter blue">Edit Akun Siswa</h3>
+        <center><h3 class="header smaller lighter blue">Edit Akun Walikelas</h3>
     <div class="modal-body">
                 <!-- PAGE CONTENT BEGINS -->
                 <form action="/admin/edit_walas/{{$walas->id}}" class="form-horizontal" method="POST" enctype="multipart/form-data">
@@ -142,6 +142,12 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="col-md-3 control-label no-padding-right" for="form-field-1-1"> NUPTK </label>
+                            <div class="col-sm-9">
+                            <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nuptk" required value="{{$walas->nuptk}}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Wali Kelas : </label>
                             <div class="col-sm-9">
                                     <select class="form-control my_select" id="" name="id_kelas">
@@ -153,13 +159,28 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto : </label>
-                                <div class="col-sm-9">
-                                <input type="file" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="foto">
-                                </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> E-mail :</label>
+                            <div class="col-sm-9">
+                            <input type="email" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="email" value="{{$walas->email}}">
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Password :</label>
+                            <div class="col-sm-9">
+                            <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="password" value="{{$walas->password}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Walikelas : </label>
+                            <div class="col-sm-3">
+                            <img src="{{asset('foto_walas/'.$walas->foto)}}" alt="Belum Ada Foto" readonly style="width:100px"/>
+                        </div>
+                        <input type="file" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="foto">
+                        </div>
+                     </div>
                      </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>

@@ -53,7 +53,7 @@
                                 <td class="text-center">{{$sw->nama_siswa}}</td>
                                 <td class="text-center">{{$sw->nisn}}</td>
                                 <td class="text-center">
-                                    @if($sw->jurusan== 'Teknik Komputer Dan Jarngan')
+                                    @if($sw->jurusan == "Teknik Komputer Dan Jaringan")
                                     TKJ
                                     @else
                                     TKR
@@ -186,15 +186,6 @@
 										<div class="col-sm-9">
                                         <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control @error('password') is-invalid @enderror" name="password" required value="{{old('password')}}"/>
                                             @error('password')
-                                                <span class="text-danger">{{$message}}</span>
-                                            @enderror
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Konfirmasi Password : </label>
-										<div class="col-sm-9">
-                                        <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control @error('konfirmasi_password') is-invalid @enderror" name="konfirmasi_password" required value="{{old('konfirmasi_password')}}"/>
-                                            @error('konfirmasi_password')
                                                 <span class="text-danger">{{$message}}</span>
                                             @enderror
                                         </div>

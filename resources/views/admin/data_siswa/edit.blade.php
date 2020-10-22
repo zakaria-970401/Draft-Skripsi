@@ -1,6 +1,6 @@
 @extends('layout/masteradmin')
 
-@section('judul' , 'Halaman Detail')
+@section('judul' , 'Halaman Detail Data Siswa')
 
 @section('konten')
 

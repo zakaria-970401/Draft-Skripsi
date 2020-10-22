@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 use App\DataSetModel;
 use App\DataSiswaModel;
+use App\HasilHitunganModel;
 
 class SiswaController extends Controller
 {
@@ -20,10 +21,10 @@ class SiswaController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function __construct()
-    {
-        $this->middleware('auth')->except('logout', 'logoutadmin');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth')->except('logout', 'logoutadmin');
+    // }
     public function index()
     {
         $nisn = Auth::user()->nisn;
@@ -99,6 +100,20 @@ class SiswaController extends Controller
         return redirect('/siswa/profile');
     }
 
+    public function update_passwordsiswa(Request $request, $id)
+    {
+
+        $siswa = User::find($id);
+
+        $siswa->password = bcrypt($request->password);
+        $siswa->save();
+
+        // dd($siswa);
+
+        Alert::success('Sukses', 'Password Berhasil Di Ubah!');
+        return redirect('/siswa/profile');
+    }
+
     public function getdaftarbansos()
     {
         date_default_timezone_set('asia/jakarta');
@@ -165,15 +180,21 @@ class SiswaController extends Controller
         }
 
 
-        Alert::success('Berhasil Mendaftar', 'Data Akan Di Validasi, Silahkan Menunggu Keputusannya');
+        // Alert::success('Berhasil Mendaftar', 'Data Akan Di Validasi, Silahkan Menunggu Keputusannya');
         return redirect('/siswa');
+
+        // RETURN API //
+        // return "Berhasil Mendaftar";
     }
 
     public function data_siswa()
     {
         $data_siswa =  DataSiswaModel::all();
 
-        return view('siswa.data_siswa.index', compact('data_siswa'));
+        // return view('siswa.data_siswa.index', compact('data_siswa'));
+
+        //RETURN API //
+        return $data_siswa;
     }
 
     public function data_kelas()
@@ -236,10 +257,16 @@ class SiswaController extends Controller
     {
         $nisn = Auth::user()->nisn;
 
-        $hasil = DataSetModel::where('keterangan', '=', 'Dapat Bantuan')->get();
-
-        $join_foto = DB::table('tbl_datasiswa')->join('tbl_dataset', 'tbl_datasiswa.nisn', '=', 'tbl_dataset.nisn')->select('tbl_datasiswa.foto')->get();
-        // dd($join_foto);
+        $hasil = DB::table('tbl_datasiswa')->join('tbl_hasil_hitungan', 'tbl_datasiswa.nisn', '=', 'tbl_hasil_hitungan.nisn')
+            ->select(
+                'tbl_datasiswa.foto',
+                'tbl_hasil_hitungan.nama_siswa',
+                'tbl_hasil_hitungan.nisn',
+                'tbl_datasiswa.id_jurusan',
+                'tbl_datasiswa.foto',
+                'tbl_hasil_hitungan.kelas'
+            )->get();
+        // dd($hasil);
 
         return view('siswa.hasil_bansos', compact('hasil', 'join_foto'));
     }

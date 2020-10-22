@@ -39,9 +39,8 @@ class WalasAuthController extends Controller
             Alert::success('Sukses', 'Selamat Datang!!');
             return redirect()->intended(route('walas.home'));
         }
-
         // If Unsuccessful, then redirect back to the login with the form data
-        return redirect()->back()->withInput($request->only('email', 'remember'));
+        return redirect()->back()->withInput($request->only('email'));
     }
 
     public function walaslogout()

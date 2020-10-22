@@ -60,7 +60,7 @@ Highcharts.chart('container', {
         type: 'column'
     },
     title: {
-        text: 'Grafik Status Kelengkapan Orang Tua Siswa'
+        text: 'GRAFIK STATUS KELENGKAPAN ORANG TUA SISWA'
     },
     subtitle: {
     },
@@ -90,7 +90,7 @@ Highcharts.chart('container', {
     },
     yAxis: {
         title: {
-            text: 'Grafik Status Kelengkapan Orang Tua Siswa'
+            text: 'GRAFIK STATUS KELENGKAPAN ORANG TUA SISWA'
         }
     },
     tooltip: {
@@ -109,16 +109,17 @@ Highcharts.chart('container', {
     },
     series: [{
         name: 'ORTU LENGKAP',
-        data: [21,67  ]
+        data: [0,0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0  ]
 
     }, {
         name: 'ORTU TIDAK LENGKAP',
-        data: [78,18  ]
+        data: [0,0, 0, 0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0  ]
 
     }]
 });
 
 
+             
 Highcharts.chart('grafik-tahunan', {
     chart: {
         backgroundColor: {
@@ -130,50 +131,72 @@ Highcharts.chart('grafik-tahunan', {
         },
         type: 'area'
     },
+
     title: {
-        text: 'Grafik Tahunan Status Kelengkapan Ortu Siswa'
+        text: 'GRAFIK TAHUNAN KELENGKAPAN ORANG TUA SISWA'
     },
+  
     xAxis: {
-        categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
-        tickmarkPlacement: 'on',
-        title: {
-            enabled: false
+        allowDecimals: false,
+        labels: {
+            formatter: function () {
+                return this.value; // clean, unformatted number for year
+            }
+        },
+        accessibility: {
+            rangeDescription: 'Range: 2020 to 2025.'
         }
     },
     yAxis: {
         title: {
-            text: 'Grafik Tahunan Status Kelengkapan Ortu Siswa'
+            text: 'GRAFIK TAHUNAN KELENGKAPAN ORANG TUA SISWA'
         },
         labels: {
             formatter: function () {
-                return this.value / 1000;
+                return this.value;
             }
         }
     },
     tooltip: {
-        split: true,
-        valueSuffix: ' Siswa'
+        pointFormat: '{point.y} SISWA YANG {series.name}'
     },
     plotOptions: {
         area: {
-            stacking: 'normal',
-            lineColor: '#666666',
-            lineWidth: 1,
+            pointStart: 2020,
             marker: {
-                lineWidth: 1,
-                lineColor: '#666666'
+                enabled: false,
+                symbol: 'circle',
+                radius: 2,
+                states: {
+                    hover: {
+                        enabled: true
+                    }
+                }
             }
         }
     },
     series: [{
-        name: 'Dapat',
-        data: [21, 24, 21, 22, 50, 50]
+        name: 'LENGKAP',
+        data: [
+               {{$siswa_lengkap_2020}},
+               {{$siswa_lengkap_2021}},
+               {{$siswa_lengkap_2022}},
+               {{$siswa_lengkap_2023}},
+               {{$siswa_lengkap_2024}},
+               {{$siswa_lengkap_2025}},
+        ]
     }, {
-        name: 'Tidak Dapat',
-        data: [22, 64,  21, 22, 50, 50]
+        name: 'TIDAK LENGKAP',
+        data: [ 
+               {{$siswa_tdklengkap_2020}},
+               {{$siswa_tdklengkap_2021}},
+               {{$siswa_tdklengkap_2022}},
+               {{$siswa_tdklengkap_2023}},
+               {{$siswa_tdklengkap_2024}},
+               {{$siswa_tdklengkap_2025}},
+        ]
     }]
 });
-
-</script>
-    
+    </script>
+        
 @endsection

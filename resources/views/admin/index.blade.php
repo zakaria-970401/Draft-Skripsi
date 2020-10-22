@@ -103,7 +103,7 @@
                                         <h5 class="text-dark">{{Auth::user()->nama}}</h5>
                                     </div><!-- /.col -->                 
                                     <div class="col-xs-12 col-sm-9">
-                                    <div id="highcharts_dashboardadmin">
+                                    <div id="container">
                                     </div>
                                     </div>
                                 </div>
@@ -112,147 +112,54 @@
                     </div>
                 </div>
                         
+                    
                         
 <script type="text/javascript">
-
-// Create the chart
-Highcharts.chart('highcharts_dashboardadmin', {
+Highcharts.chart('container', {
     chart: {
-        backgroundColor: {
-            linearGradient: [0, 0, 500, 500],
-            stops: [
-                [0, 'rgb(255, 255, 255)'],
-                [1, 'rgb(200, 200, 255)']
-            ]
-        },        
-        type: 'column'
+        type: 'line'
     },
     title: {
-        text: 'Browser market shares. January, 2018'
-    },
-    subtitle: {
-        text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
-    },
-    accessibility: {
-        announceNewData: {
-            enabled: true
-        }
+        text: 'GRAFIK TAHUNAN PENERIMAAN BANTUAN SOSIAL SISWA'
     },
     xAxis: {
-        type: 'category'
+        categories: ['2020','2021','2022','2023','2024','2025']
     },
     yAxis: {
         title: {
-            text: 'Total percent market share'
+            text: 'GRAFIK TAHUNAN PENERIMAAN BANTUAN SOSIAL SISWA'
         }
-
-    },
-    legend: {
-        enabled: false
     },
     plotOptions: {
-        series: {
-            borderWidth: 0,
+        line: {
             dataLabels: {
-                enabled: true,
-                format: '{point.y:.1f}%'
-            }
+                enabled: true
+            },
+            enableMouseTracking: false
         }
     },
-
-    tooltip: {
-        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-    },
-
-    series: [
-        {
-            name: "Browsers",
-            colorByPoint: true,
-            data: [
-                {
-                    name: "X-TKJ-A",
-                    y: 12.74,
-                },
-                {
-                    name: "X-TKJ-B",
-                    y: 42.74,
-                },
-                {
-                    name: "X-TKJ-C",
-                    y: 65.74,
-                },
-                {
-                    name: "X-TKJ-D",
-                    y: 23.74,
-                },
-                {
-                    name: "XI-TKJ-A",
-                    y: 62.74,
-                },
-                {
-                    name: "XI-TKJ-B",
-                    y: 72.74,
-                },
-                {
-                    name: "XI-TKJ-C",
-                    y: 22.74,
-                },
-                {
-                    name: "XII-TKJ-A",
-                    y: 32.74,
-                },
-                {
-                    name: "XII-TKJ-B",
-                    y: 32.74,
-                },
-                {
-                    name: "XII-TKJ-C",
-                    y: 42.74,
-                },
-                {
-                    name: "X-TKR-A",
-                    y: 62.74,
-                },
-                {
-                    name: "X-TKR-B",
-                    y: 65.74,
-                },
-                {
-                    name: "X-TKR-C",
-                    y: 82.74,
-                },
-                {
-                    name: "XI-TKR-A",
-                    y: 32.74,
-                },
-                {
-                    name: "XI-TKR-B",
-                    y: 74.74,
-                },
-                {
-                    name: "XI-TKR-C",
-                    y: 32.74,
-                },
-                {
-                    name: "XII-TKR-A",
-                    y: 22.74,
-                },
-                {
-                    name: "XII-TKR-B",
-                    y: 86.74,
-                },
-                {
-                    name: "XII-TKR-C",
-                    y: 42.74,
-                },
-       
-            ]
-        }
-    ],
+    series: [{
+        name: 'SISWA YANG DAPAT',
+        data: [
+        {{$siswa_dpt_2020}},
+        {{$siswa_dpt_2021}},
+        {{$siswa_dpt_2022}},
+        {{$siswa_dpt_2023}},
+        {{$siswa_dpt_2024}},
+        {{$siswa_dpt_2025}}
+        ]
+    }, {
+        name: 'SISWA YANG TIDAK DAPAT',
+        data: [
+        {{$siswa_tdkdpt_2020}},
+        {{$siswa_tdkdpt_2021}},
+        {{$siswa_tdkdpt_2022}},
+        {{$siswa_tdkdpt_2023}},
+        {{$siswa_tdkdpt_2024}},
+        {{$siswa_tdkdpt_2025}}
+        ]
+    }]
 });
-
 </script>
-                
 
 @endsection

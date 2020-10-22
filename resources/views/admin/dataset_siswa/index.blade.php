@@ -1,6 +1,6 @@
 @extends('layout.masteradmin')
 
-@section('judul', 'Halaman Data Set Siswa')
+@section('judul', 'Halaman Permintaan Bansos Siswa')
 
 @section('konten')
 <div class="main-content-inner">
@@ -11,8 +11,8 @@
             <a href="#">Home</a>
          </li>
       <li>
-        <i class="ace-icon fa fa-users home-icon"></i>
-            <a href="#">Dataset Siswa</a>
+        <i class="ace-icon fa fa-check home-icon"></i>
+            <a href="#">Verifikasi Data Bansos Siswa</a>
          </li>
         </ul><!-- /.breadcrumb -->
     </div>

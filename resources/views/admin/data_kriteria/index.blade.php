@@ -1,6 +1,6 @@
 @extends('layout.masteradmin')
 
-@section('judul', 'Data Kriteria')
+@section('judul', 'Halaman Data Kriteria')
 
 @section('konten')
     <div class="col-xs-12">

@@ -1,6 +1,6 @@
 @extends('layout/masteradmin')
 
-@section('judul' , 'Halaman Detail Dataset Siswa')
+@section('judul' , 'Detail Verifikasi Bansos Siswa')
 
 @section('konten')
 
@@ -12,12 +12,12 @@
                 <a href="/admin">Home</a>
             </li>
             <li>
-                <i class="ace-icon fa fa-database home-icon"></i>
-                <a href="/admin/dataset_siswa">Dataset Siswa</a>
+                <i class="ace-icon fa fa-check home-icon"></i>
+                <a href="/admin/dataset_siswa">Verifikasi Bansos Siswa</a>
             </li>
             <li>
                 <i class="ace-icon fa fa-eye home-icon"></i>
-                <a href="#">Detail Dataset Siswa</a>
+                <a href="#">Detail Bansos Siswa</a>
             </li>
         </ul><!-- /.breadcrumb -->
     </div>
@@ -28,7 +28,7 @@
         <div class="col-xs-10">
             @if($status->status == '1')
                     <div class="space-12"></div>
-                    <h3 class="header smaller lighter blue">Detail  Dataset Siswa</h3>
+                    <h3 class="header smaller lighter blue">Detail Data Permintaan Bansos</h3>
                     <div class="col-xs-8">
                         <a href="/admin/dataset_siswa" class="btn btn-primary"> <i class="fa fa-reply">   Kembali</i></a>
                     </div>
@@ -139,7 +139,7 @@
             </div><!-- /.user-profile -->
             @elseif($status->status == '2')
                     <div class="space-12"></div>
-                    <h3 class="header smaller lighter blue">Detail  Dataset Siswa</h3>
+                    <h3 class="header smaller lighter blue">Detail Permintaa Bansos Siswa</h3>
                     <div class="col-xs-8">
                         <a href="/admin/dataset_siswa" class="btn btn-primary"> <i class="fa fa-reply">   Kembali</i></a>
                     </div>

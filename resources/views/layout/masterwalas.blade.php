@@ -116,7 +116,7 @@
 					</li>
 					<li class="dropdown-modal">
 						<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-							<img class="nav-user-photo" src=" {{ asset('foto_akunadmin/'.Auth::user()->foto)}}" style="width: 78px" alt="" alt="{{Auth::user()->nama}} Foto" />
+							<img class="nav-user-photo" src=" {{ asset('foto_walas/'.Auth::user()->foto)}}" style="width: 78px" alt="" alt="{{Auth::user()->nama}} Foto" />
 							<span class="user-info">
 								<small>Welcome,</small>
 								{{Auth::user()->nama}}
@@ -176,24 +176,6 @@
 							<a href="/walas/get_hasil_dataverifikasi">
 								<i class="menu-icon fa fa-caret-right"></i>
 								Hasil Verifikasi Bansos
-							</a>
-							<b class="arrow"></b>
-						  </li>
-						</li>
-					</ul>
-				<li class="">
-					<a href="#" class="dropdown-toggle">
-						<i class="menu-icon fa fa-bar-chart"></i>
-						<span class="menu-text">
-							Analisa Data
-						</span>
-						<b class="arrow fa fa-angle-down"></b>
-					</a>
-					<ul class="submenu">
-						<li class="">
-							<a href="/admin/analisa_databansos">
-								<i class="menu-icon fa fa-caret-right"></i>
-								Bansos Anak Didik
 							</a>
 							<b class="arrow"></b>
 						  </li>
@@ -325,7 +307,21 @@
 
 			$('#manual').hide()
 
+			$('#batal_btn_changepw').hide()
+			$('#form_password').hide()
 
+
+			$('#btn_changepw').click(function(){
+				$("#form_password").show();
+				$("#btn_changepw").hide();
+				$("#batal_btn_changepw").show();
+			});
+		
+			$('#batal_btn_changepw').click(function(){
+				$("#form_password").hide();
+				$("#btn_changepw").show();
+				$("#batal_btn_changepw").hide();
+			});
 
 
 			$('#btn_edit_akunsiswa').click(function(){

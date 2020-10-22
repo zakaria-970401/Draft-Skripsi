@@ -37,7 +37,50 @@ class AdminController extends Controller
         $akunwalas = Teacher::all()->count();
         $dataset = DataSetModel::all()->count();
 
-        return view('admin.index', compact('datatraining', 'datasiswa', 'akunsiswa', 'akunadmin', 'akunwalas', 'dataset'));
+        $data = DataSetModel::all();
+
+        $siswa_dpt_2020 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2020')->count();
+        // dd($siswa_dpt_2020);
+        $siswa_dpt_2021 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2021')->count();
+        $siswa_dpt_2022 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2022')->count();
+        $siswa_dpt_2023 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2023')->count();
+        $siswa_dpt_2024 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2024')->count();
+        $siswa_dpt_2025 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2025')->count();
+
+
+        // ! TIDAK DAPAT //
+        $siswa_tdkdpt_2020 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2020')->count();
+        $siswa_tdkdpt_2021 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2021')->count();
+        $siswa_tdkdpt_2022 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2022')->count();
+        $siswa_tdkdpt_2023 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2023')->count();
+        $siswa_tdkdpt_2024 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2024')->count();
+        $siswa_tdkdpt_2025 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2025')->count();
+        // dd($siswa_tdkdpt_2020);
+
+
+        return view(
+            'admin.index',
+            compact(
+                'datatraining',
+                'datasiswa',
+                'akunsiswa',
+                'akunadmin',
+                'akunwalas',
+                'dataset',
+                'siswa_dpt_2020',
+                'siswa_dpt_2021',
+                'siswa_dpt_2022',
+                'siswa_dpt_2023',
+                'siswa_dpt_2024',
+                'siswa_dpt_2025',
+                'siswa_tdkdpt_2020',
+                'siswa_tdkdpt_2021',
+                'siswa_tdkdpt_2022',
+                'siswa_tdkdpt_2023',
+                'siswa_tdkdpt_2024',
+                'siswa_tdkdpt_2025'
+            )
+        );
     }
 
     public function data_kriteria()
@@ -1579,6 +1622,8 @@ class AdminController extends Controller
                 'tbl_datasiswa.id_jurusan'
             )->get();
 
+        // dd($join_loop);
+
 
         return view('admin.akun_siswa.index', compact('join_loop'));
     }
@@ -1831,19 +1876,19 @@ class AdminController extends Controller
                 'tbl_kelas.kelas'
             )
             ->join(
-                'tbl_akunwalas',
+                'tbl_kelas',
                 'tbl_datasiswa.id_kelas',
                 '=',
-                'tbl_akunwalas.id_kelas'
-            )->join(
-                'tbl_kelas',
-                'tbl_akunwalas.id_kelas',
-                '=',
                 'tbl_kelas.id_kelas'
-            )->where('tbl_kelas.kelas', '=', $walas->kelas)->first();
-        dd($join_kelas);
+            )->join(
+                'tbl_akunwalas',
+                'tbl_akunwalas.walikelas',
+                '=',
+                'tbl_kelas.kelas'
+            )->where('tbl_kelas.kelas', '=', $walas->walikelas)->first();
+        // dd($join_kelas);
 
-        $join_loop = DB::table('tbl_walas')
+        $join_loop = DB::table('tbl_datasiswa')
             ->select(
                 'tbl_datasiswa.nama_siswa',
                 'tbl_datasiswa.nisn',
@@ -1852,16 +1897,16 @@ class AdminController extends Controller
                 'tbl_datasiswa.foto'
             )
             ->join(
-                'tbl_datasiswa',
-                'tbl_datasiswa.id_kelas',
-                '=',
-                'tbl_walas.id_kelas'
-            )->join(
                 'tbl_kelas',
-                'tbl_walas.id_kelas',
+                'tbl_kelas.id_kelas',
                 '=',
-                'tbl_kelas.id_kelas'
-            )->where('tbl_datasiswa.id_kelas', '=', $walas->id_kelas)->get();
+                'tbl_datasiswa.id_kelas'
+            )->join(
+                'tbl_akunwalas',
+                'tbl_kelas.kelas',
+                '=',
+                'tbl_akunwalas.walikelas'
+            )->where('tbl_kelas.kelas', '=', $walas->walikelas)->orderByDesc('walikelas')->get();
         // dd($join_loop);
 
         $loopkelas = DB::table('tbl_kelas')->get();
@@ -1873,7 +1918,11 @@ class AdminController extends Controller
     {
         $walas = Teacher::find($id);
 
-        $walas->update($request->all());
+        $walas->nama = $request->nama;
+        $walas->nuptk = $request->nuptk;
+        $walas->email = $request->email;
+        $walas->password = bcrypt($request->password);
+        $walas->save();
 
         if ($request->has('foto')) {
             $request->file('foto')->move('foto_walas/', $request->file('foto')->getClientOriginalName());

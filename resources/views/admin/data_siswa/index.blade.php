@@ -1,6 +1,6 @@
 @extends('layout/masteradmin')
 
-@section('judul', 'Halaman Program Bansos')
+@section('judul', 'Halaman Data Siswa')
 
 @section('konten')
 
@@ -13,8 +13,8 @@
                 <a href="#">Home</a>
             </li>
             <li>
-                <i class="ace-icon fa fa-home home-icon"></i>
-                <a href="#">Program Bansos</a>
+                <i class="ace-icon fa fa-users home-icon"></i>
+                <a href="#">Data Siswa/Siswi</a>
             </li>
         </ul><!-- /.breadcrumb -->
     </div>

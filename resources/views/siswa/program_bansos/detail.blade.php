@@ -1,6 +1,6 @@
 @extends('layout/mastersiswa')
 
-@section('judul' , 'Halaman Detail Dataset Siswa')
+@section('judul' , 'Halaman Detail Data Bansos Siswa')
 
 @section('konten')
 

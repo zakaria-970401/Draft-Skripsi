@@ -41,8 +41,53 @@ class WalasController extends Controller
 
         $notif = DataSetModel::where('kelas', Auth::user()->walikelas)->where('status', 1)->count();
 
+        $data = DataSetModel::all();
 
-        return view('walas.index', compact('data_training', 'data_siswa', 'proses', 'akun_siswa', 'akun_admin', 'akun_walas', 'notif', 'tolak', 'selesai', 'proses'));
+        $siswa_dpt_2020 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2020')->count();
+        // dd($siswa_dpt_2020);
+        $siswa_dpt_2021 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2021')->count();
+        $siswa_dpt_2022 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2022')->count();
+        $siswa_dpt_2023 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2023')->count();
+        $siswa_dpt_2024 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2024')->count();
+        $siswa_dpt_2025 = HasilHitunganModel::whereRaw('probabilitas_dapat > probabilitas_tdkdapat')->whereYear('tgl_daftar', '2025')->count();
+
+
+        // ! TIDAK DAPAT //
+        $siswa_tdkdpt_2020 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2020')->count();
+        $siswa_tdkdpt_2021 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2021')->count();
+        $siswa_tdkdpt_2022 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2022')->count();
+        $siswa_tdkdpt_2023 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2023')->count();
+        $siswa_tdkdpt_2024 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2024')->count();
+        $siswa_tdkdpt_2025 = DB::table('tbl_hasil_hitungan')->whereRaw('probabilitas_tdkdapat > probabilitas_dapat')->whereYear('tgl_daftar', '2025')->count();
+
+
+        return view(
+            'walas.index',
+            compact(
+                'data_training',
+                'data_siswa',
+                'proses',
+                'akun_siswa',
+                'akun_admin',
+                'akun_walas',
+                'notif',
+                'tolak',
+                'selesai',
+                'proses',
+                'siswa_dpt_2020',
+                'siswa_dpt_2021',
+                'siswa_dpt_2022',
+                'siswa_dpt_2023',
+                'siswa_dpt_2024',
+                'siswa_dpt_2025',
+                'siswa_tdkdpt_2020',
+                'siswa_tdkdpt_2021',
+                'siswa_tdkdpt_2022',
+                'siswa_tdkdpt_2023',
+                'siswa_tdkdpt_2024',
+                'siswa_tdkdpt_2025'
+            )
+        );
     }
 
     public function verifikasi_databansos()
@@ -55,7 +100,7 @@ class WalasController extends Controller
                 'tbl_akunwalas.walikelas',
                 '=',
                 'tbl_dataset.kelas'
-            )->where('tbl_dataset.kelas', '=', $kelas)->get();
+            )->where('tbl_dataset.kelas', '=', $kelas)->where('tbl_dataset.status', '<>', 3)->get();
 
         // dd($join_tbl);
         return view('walas.verifikasi.index', compact('join_tbl'));
@@ -428,19 +473,16 @@ class WalasController extends Controller
 
     public function post_edit_akunwalas(Request $request, $id)
     {
+        $this->validate($request, [
+            'password' =>   'required | size:6',
+            'konfirmasi_password' => 'same:password',
+        ]);
+
         $walas = Teacher::find($id);
-        $walas->nama = $request->nama;
-        $walas->nuptk = $request->nuptk;
-        $walas->email = $request->email;
         $walas->password = bcrypt($request->password);
         $walas->save();
 
-        if ($request->has('foto')) {
-            $request->file('foto')->move('foto_walas/', $request->file('foto')->getClientOriginalName());
-            $walas->foto = $request->file('foto')->getClientOriginalName();
-            $walas->save();
-        }
-        Alert::success('Sukses', 'Profile Berhasil Di Update!');
+        Alert::success('Sukses', 'Password Berhasil Di Update!');
         return redirect()->back();
     }
 

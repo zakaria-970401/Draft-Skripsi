@@ -6,8 +6,7 @@
     <h3 class="header smaller lighter blue">Perhitungan Algoritma Naive Baiyes</h3>
     <a href="/walas/bansos_anakdidik" class="btn btn-danger btn-xl"><i class="fa fa-reply"> Kembali</a></i>
 
-    <a href="#modal-hitung" data-toggle="modal" class="btn btn-info btn-xl"><i class="fa fa-calculator"> Hitung Naive Baiyes</a></i>
-    
+
       {{-- !!!!!!!!!!!!!!!!!! BATAS FORM ACTION!!!!!!!!!!!!!!!!!!!!!!!!--}}
     <form action="/walas/simpan_dataset_siswa" method="POST">
       @csrf
@@ -102,7 +101,7 @@
                            @endif
                           </td>
                        <td class="text-center">
-                           @if($data->keterangan == 'Dapat Bantuan')
+                           @if($data->keterangan == 'Dapat')
                            <span class="label label-sm label-success">Dapat Bantuan</span>
                            @else
                            <span class="label label-sm label-danger">Tidak Dapat Bantuan</span>
@@ -367,7 +366,6 @@
                   </tr>
               </thead>
               <tbody>
-                <tr>
                   @if($status_sk_tidakmampu == 'Ada')
                     <td class="center"><input type="hidden" name="status_sk_tidakmampu" value="{{$status_sk_tidakmampu}}">
                       P( {{$status_sk_tidakmampu}})</td>
@@ -382,7 +380,7 @@
                       <b>{{$probabilitas_status_skada_request_tdkdapat}}</td>
                   @endif
                   @if($status_sk_tidakmampu == 'Tidak Ada')
-                  <td class="center"><input type="hidden" name="status_sk_tidakmampu" value="{{$status_sk_tidakmampu}}">
+                  <td class="center"><input type="hidden" name="status_sk_tidakmampu" value="{{$status_sk_tidakmampu}}"></td>
                     <td class="center">P( {{$status_sk_tidakmampu}})</td>
                     <td class="center">{{$status_sktdkada_request_dapat}} / {{$hitung_total_datatraining}}</td>
                     <td class="center">{{$status_sktdkada_request_tdkdapat}} / {{$hitung_total_datatraining}}</td>
@@ -393,7 +391,6 @@
                       <input type="hidden" name="sk_tdkada_tdkdapat" value="{{$probabilitas_status_sktdkada_request_tdkdapat}}">
                       <b>{{$probabilitas_status_sktdkada_request_tdkdapat}}</td>
                   @endif
-                  </tr>
               </tbody>
             </table>
           </div>
@@ -3679,10 +3676,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 9);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3702,22 +3699,6 @@
                         </td> 
                         @endif
                       </tr>
-                      <tr>
-                        <td class="center"><b><h5>Keterangan</h5></td>
-                          <td class="center" colspan="2">
-                            @if($nilai1 > $nilai2)
-                            <br>
-                              <b>
-                                <input type="hidden" name="keterangan" value="Dapat Bantuan">
-                                <span class="label label label-success">Dapat Bantuan<h2></span>
-                                </h2>
-                                @else
-                                <input type="hidden" name="keterangan" value="Tidak Dapat Bantuan">
-                              <span class="label label label-danger">Tidak Dapat Bantuan<h2></span>
-                              </h2>
-                            </td> 
-                            @endif
-                         </tr>
                         @endif
                       @if($status_kelengkapan_ortu == 'Tidak Lengkap' && 
                     $status_rumah_ortu == 'Kontrakan' &&

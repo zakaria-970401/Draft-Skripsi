@@ -15,13 +15,15 @@
 
 	<!-- page specific plugin styles -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+{{-- 
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+	<!-- JS -->
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script> --}}
 
-	
 	<!-- plugn external -->
 	<link rel="stylesheet" href="/assets/css/plugin-datatables.css" />
+
 
 	<link rel="stylesheet" href="/assets/js/plugin-datatables.js" />
 
@@ -71,7 +73,7 @@
 			</button>
 
 			<div class="navbar-header pull-left">
-				<a href="/" class="navbar-brand">
+				<a href="#" class="navbar-brand">
 					<img src="/assets/images/avatars/logo.png" style="width: 150px" alt="">
 				</a>
 			</div>
@@ -388,10 +390,8 @@
 		$(document).ready(function() {
 
 			//Plugin Table
-			
 			$('#myTable').DataTable();
-
-	
+			// $(".chosen-select").chosen()	
 			$('#grafik-tahunan').hide()
 
 			$('#btn_hide_tahun').hide()
