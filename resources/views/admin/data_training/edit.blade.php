@@ -57,7 +57,11 @@
                             <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Jurusan </label>
                             <div class="col-md-9">
                                 <select class="form-control" id="myselect" name="jurusan">
-                                    <option value="{{$data->jurusan}}">{{$data->jurusan}}</option>
+                                    @if($data->id_jurusan == "TKJ")
+                                    <option value="TKJ">Teknik Komputer Dan Jaringan</option>
+                                    @else
+                                    <option value="TKR">Teknik Kendaraan Ringan</option>
+                                    @endif
                                     <option>Silahkan Pilih</option>
                                     <option value="TKJ">Teknik Komputer Dan Jaringan</option>
                                     <option value="TKR">Teknik Kendaraan Ringan</option>
@@ -142,6 +146,17 @@
                                 <input type="file" class="col-xs-10 col-sm-8" name="foto_sk_tidakmampu"/>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-select-3">Keterangan : </label>
+                           <div class="col-md-9">
+                            <select class="form-control" name="keterangan">
+                                <option value="{{$data->keterangan}}">{{$data->keterangan}}</option>
+                                <option>--Silahkan Pilih--</option>
+                                <option value="Dapat">Dapat</option>
+                                <option value="Tidak Dapat">Tidak Dapat</option>
+                            </select>
+                        </div>
+                    </div>
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->

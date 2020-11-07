@@ -93,7 +93,7 @@
 
 								<li class="divider"></li>
 								<li>
-									<a href="/logout">
+									<a href="#modal-logout" data-toggle="modal">
 										<i class="ace-icon fa fa-power-off">
 										Logout</i>
 										</a>
@@ -206,7 +206,7 @@
 			</div>
 
 			<div class="modal fade" id="modal-logout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-sm">
+				<div class="modal-dialog modal-md">
 				<div class="modal-content">
 					<div class="modal-header">
 							<h3>

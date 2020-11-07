@@ -100,7 +100,7 @@
             <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-6 mr-auto">
                 <h1>Aplikasi Bantuan Sosial Siswa/Siswi</h1>
-                <p class="mb-5">Aplikasi ini di buat untuk memudahkan siswa/siswa SMK KARYA GUNA JAYA BEKASI dalam mengajukan permintaan bantuan sosial kepada sekolah, dengan tepat akurat dan cepat</p>
+                <p class="mb-5">Aplikasi ini di buat untuk memudahkan siswa/siswi SMK KARYA GUNA JAYA BEKASI dalam mengajukan permintaan bantuan sosial kepada sekolah, dengan tepat akurat dan cepat</p>
                 <div>
                   @if (Route::has('login'))
                   @auth

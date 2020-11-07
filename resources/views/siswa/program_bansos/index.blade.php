@@ -26,10 +26,12 @@
         <div class="page-content">
             <div class="row">
                 <div class="col-xs-12">
-                    @if($cek_data == NULL)
+                    @if($cek_data == NULL && $status_bansos->status == 1 )
                     <button type="button" data-target="#modal-daftar" data-toggle="modal" class="btn btn-info"><i class="fa fa-plus"> Daftar Program Bansos</button></i>
-                    @else
-                    <button type="button" data-target="#modal-daftar" data-toggle="modal" class="btn btn-info" disabled><i class="fa fa-plus"> Daftar Program Bansos</button></i>
+                    @elseif($status_bansos->status == 2)
+                    <button type="button" data-target="#modal-daftar" data-toggle="modal" class="btn btn-danger" disabled><i class="fa fa-close"> Belum Di Buka Pendaftaran</button></i>
+                   @else
+                    <button type="button" data-target="#modal-daftar" data-toggle="modal" class="btn btn-info" disabled><i class="fa fa-check"> Berhasil Mendaftar</button></i>
                     @endif
                     <div class="space-6"></div>
                     <table id="myTable" class="display">
@@ -142,7 +144,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                             <div class="form-group">
-                                    <label for="form-field-select-3">Status Kelengkapan Orang Tua : </label>
+                                    <label for="form-field-select-3">Status Kelengkapan Orang Tua/Wali : </label>
                                     <br />
                                     <select class="form-control" id="status_kelengkapan_ortu" name="status_kelengkapan_ortu">
                                         <option>--Silahkan Pilih--</option>
@@ -161,7 +163,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="form-field-select-3">Status Kepemilikan Rumah Orang Tua : </label>
+                                    <label for="form-field-select-3">Status Kepemilikan Rumah Orang Tua/Wali : </label>
                                     <br />
                                     <select class="form-control" id="" name="status_rumah_ortu">
                                         <option>--Silahkan Pilih--</option>
@@ -172,7 +174,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="form-field-select-3">Status Pekerjaan Orang Tua : </label>
+                                    <label for="form-field-select-3">Status Pekerjaan Orang Tua/Wali : </label>
                                     <br />
                                     <select class="form-control" id="" name="status_pekerjaan_wali">
                                         <option>--Silahkan Pilih--</option>

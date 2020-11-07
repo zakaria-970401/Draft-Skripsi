@@ -126,9 +126,21 @@ Route::post('/admin/cari_pekerjaanortu_tahun', 'GrafikController@post_status_pek
 Route::get('/admin/status_rumah_ortu', 'GrafikController@status_rumah_ortu');
 Route::post('/admin/cari_rumahortu_tahun', 'GrafikController@post_status_rumah_ortu');
 
+// MODULE STATISTIK DATA //
+Route::get('/admin/statistik_databansos', 'StatistikController@statistik_data_bansos');
+Route::get('/admin/statistik_datatraining', 'StatistikController@statistik_data_training');
+
+// MODULE PERANDINGAN DATA //
+Route::get('/admin/perbandingan_datatraining', 'PerbandinganController@perbandingan_data_training');
+Route::get('/admin/perbandingan_databansos', 'PerbandinganController@perbandingan_data_bansos');
+
 //MODULE NAIK KELAS //
 Route::get('/admin/naik_kelas', 'AdminController@naik_kelas');
 Route::post('/admin/naik_kelas', 'AdminController@post_naik_kelas');
+
+//MODULE AKTIVASI BANTUAN SOSAIL //
+Route::get('/admin/aktivasi_bansos', 'AdminController@aktivasi_bansos');
+Route::get('/admin/aktivasi_bansos/{id}', 'AdminController@post_aktivasi_bansos');
 
 //MODULE DATA KELAS //
 Route::get('/admin/daftar_kelas', 'AdminController@data_kelas');

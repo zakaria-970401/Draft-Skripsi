@@ -17,7 +17,6 @@
         </ul><!-- /.breadcrumb -->
     </div>
     <br>
-            <div class="container">
 
                 <div class="row">                       
                     <div class="col-xs-12">
@@ -89,7 +88,6 @@
                 </table>
             </div>
         </div>
-    </div>
 
     
 

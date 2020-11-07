@@ -430,10 +430,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -451,10 +451,10 @@
                         </td>
                         <td class="center"><b><h5>
                           <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                         $probabilitas_status_rumah_sendiri_request_tdkdapat *
                         $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                        $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                        $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                          {{$nilai2}}  
@@ -492,10 +492,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -513,10 +513,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -555,10 +555,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -576,10 +576,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -617,10 +617,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -638,10 +638,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -679,10 +679,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -700,10 +700,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -741,10 +741,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -762,10 +762,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -803,10 +803,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -824,10 +824,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -865,10 +865,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -886,10 +886,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -927,10 +927,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -948,10 +948,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -989,10 +989,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1010,10 +1010,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1051,10 +1051,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1072,10 +1072,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1113,10 +1113,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1134,10 +1134,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1175,10 +1175,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1196,10 +1196,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1237,10 +1237,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1258,10 +1258,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1299,10 +1299,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1320,10 +1320,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1361,10 +1361,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1382,10 +1382,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1423,10 +1423,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1444,10 +1444,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1485,10 +1485,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1506,10 +1506,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1547,10 +1547,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1568,10 +1568,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1609,10 +1609,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1630,10 +1630,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1671,10 +1671,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1692,10 +1692,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1733,10 +1733,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1754,10 +1754,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1795,10 +1795,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1816,10 +1816,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1857,10 +1857,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1878,10 +1878,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1919,10 +1919,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -1940,10 +1940,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_saudara_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -1981,10 +1981,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2002,10 +2002,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2043,10 +2043,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2064,10 +2064,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_saudara_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2105,10 +2105,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2126,10 +2126,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2167,10 +2167,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2188,10 +2188,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_saudara_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2229,10 +2229,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2250,10 +2250,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2291,10 +2291,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2312,10 +2312,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_saudara_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2353,10 +2353,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_lengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2374,10 +2374,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_lengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2415,10 +2415,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2436,10 +2436,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2477,10 +2477,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2498,10 +2498,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2539,10 +2539,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2560,10 +2560,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2601,10 +2601,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2622,10 +2622,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2663,10 +2663,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2684,10 +2684,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2725,10 +2725,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2746,10 +2746,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2787,10 +2787,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2808,10 +2808,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2849,10 +2849,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sendiri_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2870,10 +2870,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sendiri_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2911,10 +2911,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2932,10 +2932,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -2973,10 +2973,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -2994,10 +2994,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3035,10 +3035,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3056,10 +3056,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3097,10 +3097,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3118,10 +3118,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3159,10 +3159,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3180,10 +3180,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3221,10 +3221,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3242,10 +3242,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3283,10 +3283,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3304,10 +3304,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3345,10 +3345,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_sewa_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3366,10 +3366,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_sewa_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3407,10 +3407,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3428,10 +3428,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3469,10 +3469,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3490,10 +3490,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3531,10 +3531,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3552,10 +3552,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3593,10 +3593,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3614,10 +3614,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3655,10 +3655,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3715,10 +3715,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3736,10 +3736,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3777,10 +3777,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3798,10 +3798,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3839,10 +3839,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_kontrakan_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3860,10 +3860,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3901,10 +3901,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3922,10 +3922,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_saudara_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -3963,10 +3963,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_swasta_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -3984,10 +3984,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_swasta_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -4025,10 +4025,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -4046,10 +4046,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_saudara_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -4087,10 +4087,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_negri_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -4108,10 +4108,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_negri_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -4149,10 +4149,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -4170,10 +4170,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_saudara_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -4211,10 +4211,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_tdktetap_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -4232,10 +4232,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_tdktetap_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -4273,10 +4273,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_skada_request_dapat, 0 , 7);
+                                      $probabilitas_status_skada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -4294,10 +4294,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_saudara_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_skada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_skada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  
@@ -4335,10 +4335,10 @@
                           </td>
                           <td class="center"><b><h5>
                             <?php
-                            $nilai1 = substr($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
+                            $nilai1 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_dapat_request *
                                       $probabilitas_status_rumah_saudara_request_dapat *
                                       $probabilitas_status_pekerja_usaha_request_dapat *
-                                      $probabilitas_status_sktdkada_request_dapat, 0 , 7);
+                                      $probabilitas_status_sktdkada_request_dapat, 7);
                             ?>
                             <input type="hidden" name="probabilitas_dapat" value="{{$nilai1}}">
                                {{$nilai1}}  
@@ -4356,10 +4356,10 @@
                       </td>
                       <td class="center"><b><h5>
                         <?php
-                        $nilai2 = substr($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
+                        $nilai2 = number_format($probabilitas_kelengkapan_ortu_tdklengkap_tdkdapat_request *
                                   $probabilitas_status_rumah_kontrakan_request_tdkdapat *
                                   $probabilitas_status_pekerja_usaha_request_tdkdapat *
-                                  $probabilitas_status_sktdkada_request_tdkdapat, 0 , 7);
+                                  $probabilitas_status_sktdkada_request_tdkdapat, 7);
                         ?>
                          <input type="hidden" name="probabilitas_tdkdapat" value="{{$nilai2}}">
                           {{$nilai2}}  

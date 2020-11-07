@@ -16,6 +16,7 @@ use Maatwebsite\Excel\Facades\Excel;
 use App\DataSetModel;
 use App\HasilHitunganModel;
 use App\Teacher;
+use App\AktivasiBansosModel;
 use App\Exports\DataSiswaExport;
 use App\Exports\AkunWalasExport;
 use App\Exports\AkunSiswaExport;
@@ -783,7 +784,7 @@ class AdminController extends Controller
 
     public function get_dataset_siswa()
     {
-        $status = DataSetModel::all();
+        $status = DataSetModel::orderBy('kelas', 'ASC')->get();
 
         $datatraining = DataTrainingModel::all();
 
@@ -2078,6 +2079,37 @@ class AdminController extends Controller
 
         Alert::success('Sukses', 'Data Hasil Verifikasi Berhasil Di Simpan Ke Data Training');
         return redirect()->back();
+    }
+
+    public function aktivasi_bansos(Request $request)
+    {
+        $status = DB::table('tbl_aktivasi_bansos')->first();
+        return view('admin.aktivasi_bansos.index', compact('status'));
+    }
+
+    public function post_aktivasi_bansos(Request $request, $id)
+    {
+        $status = AktivasiBansosModel::find($id);
+        if ($status->status == 1) {
+            $status->status = 2;
+            $status->where('id', $status['id'])
+                ->update([
+                    'keterangan' => 'Nonaktif',
+                ]);
+            Alert::success('Sukses', 'Pendaftaran Berhasil Di Non-Aktifkan');
+            $status->save();
+            return redirect()->back();
+        } elseif ($status->status == 2) {
+            $status->status = 1;
+            $status->where('id', $status['id'])
+                ->update([
+                    'keterangan' => 'Aktif',
+                ]);
+            Alert::success('Sukses', 'Pendaftaran Berhasil Di Aktifkan');
+            $status->save();
+            return redirect()->back();
+        }
+        // dd($status);
     }
 
     public function hapus_datasiswa($id)

@@ -10,6 +10,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 use App\DataSetModel;
+use App\AktivasiBansosModel;
 use App\DataSiswaModel;
 use App\HasilHitunganModel;
 
@@ -21,10 +22,10 @@ class SiswaController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    // public function __construct()
-    // {
-    //     $this->middleware('auth')->except('logout', 'logoutadmin');
-    // }
+    public function __construct()
+    {
+        $this->middleware('auth')->except('logout', 'logoutadmin');
+    }
     public function index()
     {
         $nisn = Auth::user()->nisn;
@@ -102,16 +103,22 @@ class SiswaController extends Controller
 
     public function update_passwordsiswa(Request $request, $id)
     {
+        // $this->validate($request, [
+        //     'password' => 'size:6'
+        // ]);
 
         $siswa = User::find($id);
 
         $siswa->password = bcrypt($request->password);
         $siswa->save();
-
         // dd($siswa);
-
+        // if ($siswa == true) {
         Alert::success('Sukses', 'Password Berhasil Di Ubah!');
+        //     return redirect('/siswa/profile');
+        // } elseif ($siswa == false) {
+        //     Alert::error('Gagal', 'Password Terlalu Panjang');
         return redirect('/siswa/profile');
+        // }
     }
 
     public function getdaftarbansos()
@@ -122,6 +129,8 @@ class SiswaController extends Controller
         $data_bansos = DataSetModel::all();
 
         $nisn = Auth::user()->nisn;
+
+        $status_bansos = AktivasiBansosModel::first();
 
 
         $join_kelas = DB::table('tbl_datasiswa')
@@ -150,7 +159,7 @@ class SiswaController extends Controller
 
         // dd($cek_data);
 
-        return view('siswa.program_bansos.index', compact('tanggal', 'join_kelas', 'join_jurusan', 'data_bansos', 'status_btn', 'cek_data'));
+        return view('siswa.program_bansos.index', compact('tanggal', 'join_kelas', 'join_jurusan', 'data_bansos', 'status_btn', 'cek_data', 'status_bansos'));
     }
 
     public function postdaftarbansos(Request $request)
@@ -191,10 +200,10 @@ class SiswaController extends Controller
     {
         $data_siswa =  DataSiswaModel::all();
 
-        // return view('siswa.data_siswa.index', compact('data_siswa'));
+        return view('siswa.data_siswa.index', compact('data_siswa'));
 
         //RETURN API //
-        return $data_siswa;
+        // return $data_siswa;
     }
 
     public function data_kelas()

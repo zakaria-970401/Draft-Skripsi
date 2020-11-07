@@ -169,6 +169,13 @@
 									</a>
 									<b class="arrow"></b>
 								</li>
+								<li class="">
+									<a href="/admin/daftar_kelas">
+										<i class="menu-icon fa fa-caret-right"></i>
+										Data Kelas
+									</a>
+									<b class="arrow"></b>
+								  </li>
 							</ul>
 						<li class="">
 							<a href="#" class="dropdown-toggle">
@@ -231,7 +238,7 @@
 						<li class="">
 							<a href="#" class="dropdown-toggle">
 								<i class="menu-icon fa fa-caret-right"></i>
-								Data Bansos Siswa
+								Rekapitulasi
 								<b class="arrow fa fa-angle-down"></b>
 						</a>
 					<ul class="submenu">
@@ -267,11 +274,65 @@
 					</li>
 				</li>
 			  </ul>
+					<ul class="submenu">
+						<li class="">
+							<a href="#" class="dropdown-toggle">
+								<i class="menu-icon fa fa-caret-right"></i>
+								Perbandingan
+								<b class="arrow fa fa-angle-down"></b>
+						</a>
+					<ul class="submenu">
+						<li class="">
+							<a href="/admin/perbandingan_databansos">
+								<i class="menu-icon fa fa-caret-right"></i>
+								Data Bansos Siswa
+							</a>
+							<b class="arrow fa fa-caret-right"></b>
+						  </li>
+						<li class="">
+							<a href="/admin/perbandingan_datatraining">
+								<i class="menu-icon fa fa-caret-right"></i>
+								Data Training
+							</a>
+							<b class="arrow fa fa-caret-right"></b>
+						  </li>
+
+						</ul>
+					</li>
+				</li>
+			  </ul>
+					<ul class="submenu">
+						<li class="">
+							<a href="#" class="dropdown-toggle">
+								<i class="menu-icon fa fa-caret-right"></i>
+								Statistik
+								<b class="arrow fa fa-angle-down"></b>
+						</a>
+					<ul class="submenu">
+						<li class="">
+							<a href="/admin/statistik_databansos">
+								<i class="menu-icon fa fa-caret-right"></i>
+								Data Bansos Siswa
+							</a>
+							<b class="arrow fa fa-caret-right"></b>
+						  </li>
+						<li class="">
+							<a href="/admin/statistik_datatraining">
+								<i class="menu-icon fa fa-caret-right"></i>
+								Data Training
+							</a>
+							<b class="arrow fa fa-caret-right"></b>
+						  </li>
+
+						</ul>
+					</li>
+				</li>
+			  </ul>
 				<li class="">
 					<a href="#" class="dropdown-toggle">
-						<i class="menu-icon fa fa-university"></i>
+						<i class="menu-icon fa fa-cog"></i>
 						<span class="menu-text">
-							Setting Kelas
+							Pengaturan
 						</span>
 						<b class="arrow fa fa-angle-down"></b>
 					</a>
@@ -284,9 +345,9 @@
 							<b class="arrow"></b>
 						  </li>
 						<li class="">
-							<a href="/admin/daftar_kelas">
+							<a href="/admin/aktivasi_bansos">
 								<i class="menu-icon fa fa-caret-right"></i>
-								Lihat Kelas
+								Hidup/Matikan Pendaftaran
 							</a>
 							<b class="arrow"></b>
 						  </li>

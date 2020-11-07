@@ -26,7 +26,7 @@
                                 <i class="ace-icon fa fa-database"></i>
                             </div>                        
                             <div class="infobox-data">
-                                <a href="#">
+                                <a href="/admin/data_training">
                                 <span class="infobox-data-number">{{$datatraining}}</span>
                                 <div class="infobox-content">Data Training</div>
                             </a>
@@ -37,7 +37,7 @@
                                 <i class="ace-icon fa fa-book"></i>
                             </div>                        
                             <div class="infobox-data">
-                                <a href="#">
+                                <a href="/admin/dataset_siswa">
                                 <span class="infobox-data-number">{{$dataset}}</span>
                                 <div class="infobox-content">Permintaan Bansos</div>
                             </a>
@@ -48,7 +48,7 @@
                                 <i class="ace-icon fa fa-users"></i>
                             </div>                        
                             <div class="infobox-data">
-                                <a href="#">
+                                <a href="/admin/data_siswa">
                                 <span class="infobox-data-number">{{$datasiswa}}</span>
                                 <div class="infobox-content">Data Siswa</div>
                             </a>
@@ -59,7 +59,7 @@
                                 <i class="ace-icon fa fa-user"></i>
                             </div>                        
                             <div class="infobox-data">
-                                <a href="#">
+                                <a href="/admin/akunsiswa">
                                 <span class="infobox-data-number">{{$akunsiswa}}</span>
                                 <div class="infobox-content">Akun Siswa</div>
                             </a>
@@ -70,7 +70,7 @@
                                 <i class="ace-icon fa fa-graduation-cap"></i>
                             </div>                        
                             <div class="infobox-data">
-                                <a href="#">
+                                <a href="/admin/daftar_walas">
                                 <span class="infobox-data-number">{{$akunwalas}}</span>
                                 <div class="infobox-content">Akun Walikelas</div>
                             </a>
@@ -81,7 +81,7 @@
                                 <i class="ace-icon fa fa-hashtag"></i>
                             </div>                        
                             <div class="infobox-data">
-                                <a href="#">
+                                <a href="/admin/akunadmin">
                                 <span class="infobox-data-number">{{$akunadmin}}</span>
                                 <div class="infobox-content">Akun Admin</div>
                             </a>

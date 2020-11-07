@@ -170,12 +170,16 @@
                                 <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nama_siswa" value="{{Auth::user()->nama_siswa}}" disabled/>
                                 </div>
                             </div>
+                            <br>
+                            <br>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> NISN Siswa : </label>
                                 <div class="col-sm-9">
                                 <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control @error('nisn') is-invalid @enderror" name="nisn" value="{{Auth::user()->nisn}}" disabled/>
                                 </div>
                             </div>
+                            <br>
+                            <br>
                             <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Jurusan : </label>
                                     <div class="col-sm-9">
@@ -186,12 +190,16 @@
                                         @endif
                                         </div>
                                      </div>
+                                     <br>
+                                     <br>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Kelas : </label>
                                     <div class="col-sm-9">
                                         <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control @error('nisn') is-invalid @enderror" name="nisn" value="{{$join_kelas->kelas}}" disabled/>
                                     </div>
                                  </div>
+                                 <br>
+                                <br>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Agama : </label>
                                     <div class="col-sm-9">
@@ -212,10 +220,12 @@
                                         </select>
                                     </div>
                                  </div>
+                                 <br>
+                                <br>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Jenis Kelamin : </label>
                                     <div class="col-sm-9">
-                                        @if($join_siswa == 'L')
+                                        @if($join_siswa->jenis_kelamin == 'L')
                                         <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control @error('nisn') is-invalid @enderror" name="nisn" value="Laki-Laki" disabled/>
                                         @else
                                         <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control @error('nisn') is-invalid @enderror" name="nisn" value="Perempuan" disabled/>
@@ -230,24 +240,32 @@
                                     <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" value="{{$join_siswa->alamat}}" disabled/>
                                     </div>
                                 </div>
+                                <br>
+                                <br>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> No.Hp : </label>
                                     <div class="col-sm-9">
                                     <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="no_hp" value="{{$join_siswa->no_hp}}" disabled/>
                                     </div>
                                 </div>
+                                <br>
+                                <br>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Nama Ayah : </label>
                                     <div class="col-sm-9">
                                     <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nama_ayah" value="{{$join_siswa->nama_ayah}}" disabled/>
                                     </div>
                                 </div>
+                                <br>
+                                <br>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Nama Ibu : </label>
                                     <div class="col-sm-9">
                                     <input type="text" id="form-field-1-1" placeholder="Silahkan di isi" class="form-control" name="nama_ibu" value="{{$join_siswa->nama_ibu}}" disabled/>
                                     </div>
                                 </div>
+                                <br>
+                                <br>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Siswa : </label>
                                     <div class="col-sm-9">
@@ -282,7 +300,7 @@
                                         <div class="form-group" id="foto-profile">
                                             <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Foto Profile : </label>
                                             <div class="col-sm-9">
-                                                <input type="file" id="input-username" placeholder="Silahkan di isi" class="form-control" name="foto" />
+                                                <input type="file" id="input-username" placeholder="Silahkan di isi" class="form-control" name="foto" required />
                                             </div>
                                         </div>
                                     <button type="button" id="btn_edit_akunsiswa" class="btn btn-info btn-md"><i class="fa fa-pencil"> Edit Akun</button></i>
@@ -297,7 +315,7 @@
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Password Baru : </label>
                                             <div class="col-sm-9">
-                                                <input type="text" id="input-username" placeholder="Silahkan di isi" class="form-control" name="password" />
+                                                <input type="text" id="input-username" placeholder="Silahkan di isi" class="form-control" name="password" autocomplete="off" required/>
                                                 <span class="text-danger"> *Maks. 6 Digit</span>
                                             </div>
                                         </div>

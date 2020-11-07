@@ -74,7 +74,7 @@
                                         <h5 class="text-dark">{{Auth::user()->nama}}</h5>
                                     </div><!-- /.col -->                 
                                     <div class="col-xs-12 col-sm-9">
-                                    <div id="grafik-tahunan">
+                                    <div id="container">
                                     </div>
                                     </div>
                                 </div>
@@ -86,73 +86,51 @@
                         
 <script type="text/javascript">
 
-Highcharts.chart('grafik-tahunan', {
-
-title: {
-    text: 'GRAFIK PENERIMAAN BANSOS SISWA'
-},
-
-yAxis: {
+Highcharts.chart('container', {
+    chart: {
+        type: 'line'
+    },
     title: {
-        text: 'GRAFIK PENERIMAAN BANSOS SISWA'
-    }
-},
-
-xAxis: {
-    accessibility: {
-        rangeDescription: 'Range: 2017 to 2020'
-    }
-},
-
-legend: {
-    layout: 'vertical',
-    align: 'right',
-    verticalAlign: 'middle'
-},
-
-plotOptions: {
-    series: {
-        label: {
-            connectorAllowed: false
-        },
-        pointStart: 2017
-    }
-},
-
-series: [{
-    name: 'SISWA YANG DAPAT',
-    data: [
-            104,
-            135,
-            97,
-            81
-          ]
-}, {
-    name: 'SISWA YANG TIDAK DAPAT',
-    data: [
-        5,
-        13,
-        8,
-        11
-         ]
-}],
-
-responsive: {
-    rules: [{
-        condition: {
-            maxWidth: 500
-        },
-        chartOptions: {
-            legend: {
-                layout: 'horizontal',
-                align: 'center',
-                verticalAlign: 'bottom'
-            }
+        text: 'GRAFIK TAHUNAN PENERIMAAN BANTUAN SOSIAL SISWA'
+    },
+    xAxis: {
+        categories: ['2020','2021','2022','2023','2024','2025']
+    },
+    yAxis: {
+        title: {
+            text: 'GRAFIK TAHUNAN PENERIMAAN BANTUAN SOSIAL SISWA'
         }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: false
+        }
+    },
+    series: [{
+        name: 'SISWA YANG DAPAT',
+        data: [
+        {{$siswa_dpt_2020}},
+        {{$siswa_dpt_2021}},
+        {{$siswa_dpt_2022}},
+        {{$siswa_dpt_2023}},
+        {{$siswa_dpt_2024}},
+        {{$siswa_dpt_2025}}
+        ]
+    }, {
+        name: 'SISWA YANG TIDAK DAPAT',
+        data: [
+        {{$siswa_tdkdpt_2020}},
+        {{$siswa_tdkdpt_2021}},
+        {{$siswa_tdkdpt_2022}},
+        {{$siswa_tdkdpt_2023}},
+        {{$siswa_tdkdpt_2024}},
+        {{$siswa_tdkdpt_2025}}
+        ]
     }]
-}
-
 });
-    </script>
+</script>
         
     @endsection

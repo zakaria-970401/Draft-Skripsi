@@ -143,7 +143,7 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Password Baru : </label>
                             <div class="col-sm-9">
-                                <input type="text" id="input-password" placeholder="Silahkan di isi" class="form-control" name="password" />
+                                <input type="text" id="input-password" placeholder="Silahkan di isi" class="form-control" name="password" autocomplete="off" />
                             </div>
                         </div>
                         <center><button type="submit" id="btn_changepw" class="btn btn-success btn-mdz"><i class="fa fa-save"> Simpan</i></button>
